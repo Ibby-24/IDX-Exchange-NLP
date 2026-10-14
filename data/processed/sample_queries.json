@@ -1,0 +1,242 @@
+[
+  {
+    "query": "show me homes in Corona",
+    "intent": "browsing"
+  },
+  {
+    "query": "houses for sale in Temecula",
+    "intent": "browsing"
+  },
+  {
+    "query": "homes with pools in Murrieta",
+    "intent": "browsing"
+  },
+  {
+    "query": "condos in Long Beach",
+    "intent": "browsing"
+  },
+  {
+    "query": "luxury homes in Pasadena",
+    "intent": "browsing"
+  },
+  {
+    "query": "townhouses in Irvine",
+    "intent": "browsing"
+  },
+  {
+    "query": "what's available in Big Bear City",
+    "intent": "browsing"
+  },
+  {
+    "query": "homes near the beach in Oceanside",
+    "intent": "browsing"
+  },
+  {
+    "query": "mountain view homes in Apple Valley",
+    "intent": "browsing"
+  },
+  {
+    "query": "new construction in Moreno Valley",
+    "intent": "browsing"
+  },
+  {
+    "query": "single story homes in Hemet",
+    "intent": "browsing"
+  },
+  {
+    "query": "golf course homes in Palm Desert",
+    "intent": "browsing"
+  },
+  {
+    "query": "cabins for sale in Big Bear",
+    "intent": "browsing"
+  },
+  {
+    "query": "4 bedroom houses in Riverside",
+    "intent": "browsing"
+  },
+  {
+    "query": "homes with a view in San Diego",
+    "intent": "browsing"
+  },
+  {
+    "query": "fixer upper houses Los Angeles",
+    "intent": "browsing"
+  },
+  {
+    "query": "homes in gated communities in Indio",
+    "intent": "browsing"
+  },
+  {
+    "query": "modern homes in Oakland",
+    "intent": "browsing"
+  },
+  {
+    "query": "55+ communities in Menifee",
+    "intent": "browsing"
+  },
+  {
+    "query": "show me listings in Simi Valley",
+    "intent": "browsing"
+  },
+  {
+    "query": "condos near UC Irvine with low HOA fees",
+    "intent": "researching"
+  },
+  {
+    "query": "which San Diego neighborhoods have top-rated schools",
+    "intent": "researching"
+  },
+  {
+    "query": "average HOA dues in Palm Desert gated communities",
+    "intent": "researching"
+  },
+  {
+    "query": "cities near Temecula with no Mello-Roos",
+    "intent": "researching"
+  },
+  {
+    "query": "is solar usually owned or leased on Murrieta homes",
+    "intent": "researching"
+  },
+  {
+    "query": "areas in Riverside with low property taxes",
+    "intent": "researching"
+  },
+  {
+    "query": "best Walnut Creek neighborhoods for families",
+    "intent": "researching"
+  },
+  {
+    "query": "how much do homes with a pool cost in Indio",
+    "intent": "researching"
+  },
+  {
+    "query": "does an ADU add value to a house in Los Angeles",
+    "intent": "researching"
+  },
+  {
+    "query": "compare Corona and Riverside for commuters",
+    "intent": "researching"
+  },
+  {
+    "query": "San Jose neighborhoods with walkable shopping and dining",
+    "intent": "researching"
+  },
+  {
+    "query": "are vacation rentals allowed in Big Bear City cabins",
+    "intent": "researching"
+  },
+  {
+    "query": "quiet streets near the beach in Oceanside",
+    "intent": "researching"
+  },
+  {
+    "query": "pros and cons of manufactured homes in Hemet",
+    "intent": "researching"
+  },
+  {
+    "query": "typical HOA fees for condos in Long Beach",
+    "intent": "researching"
+  },
+  {
+    "query": "Pasadena areas with a strong school district and walkable streets",
+    "intent": "researching"
+  },
+  {
+    "query": "55+ communities in Menifee with resort style amenities and low HOA",
+    "intent": "researching"
+  },
+  {
+    "query": "is a townhome or a condo cheaper in Irvine",
+    "intent": "researching"
+  },
+  {
+    "query": "which Simi Valley communities allow short term rentals",
+    "intent": "researching"
+  },
+  {
+    "query": "how long do homes take to sell in Lancaster",
+    "intent": "researching"
+  },
+  {
+    "query": "move-in ready 4 bed 3 bath in Temecula under 1.1m",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "open houses this weekend in Irvine",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "3br 2ba w/ pool in Hemet under 550k ready now",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "single story homes in Corona with 3 car garage under $900k available now",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "turnkey townhouse in Long Beach under 750k with attached garage",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "new listings in San Diego with ADU and solar under 1.5m",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "homes in Murrieta w/ no HOA and RV parking ready to tour",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "schedule a showing for a remodeled 4 bedroom in Riverside",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "gated community homes in Palm Desert with pool under 800k open house sunday",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "2,000 sqft or larger in Oceanside under $1.2M move in ready",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "homes in Apple Valley with seller financing available",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "just listed condos in Pasadena under 650k with parking",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "5 bed 4 bath cul-de-sac home in Walnut Creek, can close in 30 days",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "investor special in Lancaster under 400k, cash offer ready",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "homes w/ vacation rental license in Big Bear City under 700k",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "price reduced homes in Menifee with 3 car garage",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "contact agent about 3bd/2ba in Moreno Valley w/ owned solar",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "fixer-upper w/ ADU potential in Victorville under 450k",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "Escondido homes with mountain views, vaulted ceilings, and a home office ready to tour this week",
+    "intent": "high_intent_inquiry"
+  },
+  {
+    "query": "4br in Indio w/ pool & spa, no HOA, under $700k, available immediately",
+    "intent": "high_intent_inquiry"
+  }
+]
