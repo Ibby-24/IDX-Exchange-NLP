@@ -1,4 +1,4 @@
-"""Week 2 tests: these ARE the specification for scripts/text_cleaning.py.
+"""Week 2 tests:
 
 Run from the repo root:
     pytest tests/test_week2.py -v                 # everything
@@ -27,7 +27,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 CONFIG_PATH = ROOT / "config" / "abbreviations.json"
 
 def squash(text):
-    """Collapse all whitespace so markup tests don't depend on exact spacing."""
+    #Collapse all whitespace so markup tests don't depend on exact spacing.
     return " ".join(text.split())
 
 
@@ -36,22 +36,22 @@ def cleaner():
     return TextCleaner()
 
 UNICODE_CASES = [
-    ("it\u2019s", "it's"),                                    #curly apostrophe
-    ("\u201cWelcome\u201d", '"Welcome"'),                     #curly double quotes
-    ("patio\u2014perfect", "patio - perfect"),                #em dash, no spaces
-    ("location \u2014 an", "location - an"),                  #em dash with spaces
-    ("2\u20133 bedrooms", "2 - 3 bedrooms"),                  #en dash
-    ("today\u200b\u200c\u200b and", "today and"),             #zero-width characters
-    ("walk\u00a0in", "walk in"),                              #non-breaking space
-    ("\u00bd-bath", "1/2-bath"),                              #unicode fraction
-    ("lot \u00b1 5 acres", "lot +/- 5 acres"),                #plus-minus
-    ("Caltrain\u00ae station", "Caltrain station"),           #registered sign removed
-    ("fa\u00c3\u00a7ade", "fa\u00e7ade"),                     #mojibake: faÃ§ade -> façade
-    ("pied-\u00c3\u00a0-terre", "pied-\u00e0-terre"),         #mojibake with NBSP byte (order trap!)
-    ("Plain text stays.", "Plain text stays."),               #untouched
-    ("Caf\u00e9 stays", "Caf\u00e9 stays"),                   #legitimate accents survive
-    ("Caltrain\u00c3\u00c2\u00ae station", "Caltrain station"),  #double-encoded leftovers
-    ("\u2022 Pool \u2022 Spa", "- Pool - Spa"),                #bullets become dashes
+    ("it\u2019s", "it's"),                                    
+    ("\u201cWelcome\u201d", '"Welcome"'),                     
+    ("patio\u2014perfect", "patio - perfect"),                
+    ("location \u2014 an", "location - an"),                  
+    ("2\u20133 bedrooms", "2 - 3 bedrooms"),                  
+    ("today\u200b\u200c\u200b and", "today and"),             
+    ("walk\u00a0in", "walk in"),                              
+    ("\u00bd-bath", "1/2-bath"),                              
+    ("lot \u00b1 5 acres", "lot +/- 5 acres"),                
+    ("Caltrain\u00ae station", "Caltrain station"),           
+    ("fa\u00c3\u00a7ade", "fa\u00e7ade"), 
+    ("pied-\u00c3\u00a0-terre", "pied-\u00e0-terre"),
+    ("Plain text stays.", "Plain text stays."), 
+    ("Caf\u00e9 stays", "Caf\u00e9 stays"),
+    ("Caltrain\u00c3\u00c2\u00ae station", "Caltrain station"),
+    ("\u2022 Pool \u2022 Spa", "- Pool - Spa"), 
 ]
 
 @pytest.mark.parametrize("raw,expected", UNICODE_CASES)
