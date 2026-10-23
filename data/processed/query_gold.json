@@ -1,0 +1,977 @@
+{
+ "notes": {
+  "purpose": "Expected filters per query, hand-labeled BEFORE the parser was written. week1 = tuning set (the 60 Week 1 queries); heldout = fresh queries scored once at the end.",
+  "conventions": "amenities are Week 1 taxonomy terms (lowercase); order does not matter; terms ignored in queries: minutes from, walking distance, hoa, hoa fees, hoa dues, property taxes, lender; 'no/without HOA' = term 'no hoa'; over/more than/fewer than on counts are strict, on prices and sqft inclusive; 'around X' = +/-10%; bare price = budget (price_max); bare sqft = +/-10% is NOT used here (bare sqft is not labeled).",
+  "limits": "labels written by one annotator (the AI assistant that also wrote the parser); held-out queries are invented, not real user traffic"
+ },
+ "week1": [
+  {
+   "query": "show me homes in Corona",
+   "intent": "browsing",
+   "expected": {
+    "city": "Corona"
+   }
+  },
+  {
+   "query": "houses for sale in Temecula",
+   "intent": "browsing",
+   "expected": {
+    "city": "Temecula"
+   }
+  },
+  {
+   "query": "homes with pools in Murrieta",
+   "intent": "browsing",
+   "expected": {
+    "city": "Murrieta",
+    "amenities": [
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "condos in Long Beach",
+   "intent": "browsing",
+   "expected": {
+    "city": "Long Beach",
+    "amenities": [
+     "condo"
+    ]
+   }
+  },
+  {
+   "query": "luxury homes in Pasadena",
+   "intent": "browsing",
+   "expected": {
+    "city": "Pasadena"
+   }
+  },
+  {
+   "query": "townhouses in Irvine",
+   "intent": "browsing",
+   "expected": {
+    "city": "Irvine",
+    "amenities": [
+     "townhouse"
+    ]
+   }
+  },
+  {
+   "query": "what's available in Big Bear City",
+   "intent": "browsing",
+   "expected": {
+    "city": "Big Bear City"
+   }
+  },
+  {
+   "query": "homes near the beach in Oceanside",
+   "intent": "browsing",
+   "expected": {
+    "city": "Oceanside"
+   }
+  },
+  {
+   "query": "mountain view homes in Apple Valley",
+   "intent": "browsing",
+   "expected": {
+    "city": "Apple Valley",
+    "amenities": [
+     "mountain views"
+    ]
+   }
+  },
+  {
+   "query": "new construction in Moreno Valley",
+   "intent": "browsing",
+   "expected": {
+    "city": "Moreno Valley",
+    "amenities": [
+     "new construction"
+    ]
+   }
+  },
+  {
+   "query": "single story homes in Hemet",
+   "intent": "browsing",
+   "expected": {
+    "city": "Hemet",
+    "amenities": [
+     "single story"
+    ]
+   }
+  },
+  {
+   "query": "golf course homes in Palm Desert",
+   "intent": "browsing",
+   "expected": {
+    "city": "Palm Desert",
+    "amenities": [
+     "golf course"
+    ]
+   }
+  },
+  {
+   "query": "cabins for sale in Big Bear",
+   "intent": "browsing",
+   "expected": {
+    "city": "Big Bear",
+    "amenities": [
+     "cabin"
+    ]
+   }
+  },
+  {
+   "query": "4 bedroom houses in Riverside",
+   "intent": "browsing",
+   "expected": {
+    "city": "Riverside",
+    "bedrooms": 4
+   }
+  },
+  {
+   "query": "homes with a view in San Diego",
+   "intent": "browsing",
+   "expected": {
+    "city": "San Diego"
+   }
+  },
+  {
+   "query": "fixer upper houses Los Angeles",
+   "intent": "browsing",
+   "expected": {
+    "city": "Los Angeles",
+    "amenities": [
+     "fixer-upper"
+    ]
+   }
+  },
+  {
+   "query": "homes in gated communities in Indio",
+   "intent": "browsing",
+   "expected": {
+    "city": "Indio",
+    "amenities": [
+     "gated community"
+    ]
+   }
+  },
+  {
+   "query": "modern homes in Oakland",
+   "intent": "browsing",
+   "expected": {
+    "city": "Oakland"
+   }
+  },
+  {
+   "query": "55+ communities in Menifee",
+   "intent": "browsing",
+   "expected": {
+    "city": "Menifee",
+    "amenities": [
+     "55+ community"
+    ]
+   }
+  },
+  {
+   "query": "show me listings in Simi Valley",
+   "intent": "browsing",
+   "expected": {
+    "city": "Simi Valley"
+   }
+  },
+  {
+   "query": "condos near UC Irvine with low HOA fees",
+   "intent": "researching",
+   "expected": {
+    "city": "Irvine",
+    "amenities": [
+     "condo",
+     "low hoa"
+    ]
+   }
+  },
+  {
+   "query": "which San Diego neighborhoods have top-rated schools",
+   "intent": "researching",
+   "expected": {
+    "city": "San Diego",
+    "amenities": [
+     "top-rated schools"
+    ]
+   }
+  },
+  {
+   "query": "average HOA dues in Palm Desert gated communities",
+   "intent": "researching",
+   "expected": {
+    "city": "Palm Desert",
+    "amenities": [
+     "gated community"
+    ]
+   }
+  },
+  {
+   "query": "cities near Temecula with no Mello-Roos",
+   "intent": "researching",
+   "expected": {
+    "city": "Temecula",
+    "exclude_amenities": [
+     "mello-roos"
+    ]
+   }
+  },
+  {
+   "query": "is solar usually owned or leased on Murrieta homes",
+   "intent": "researching",
+   "expected": {
+    "city": "Murrieta",
+    "amenities": [
+     "solar"
+    ]
+   }
+  },
+  {
+   "query": "areas in Riverside with low property taxes",
+   "intent": "researching",
+   "expected": {
+    "city": "Riverside",
+    "amenities": [
+     "low property taxes"
+    ]
+   }
+  },
+  {
+   "query": "best Walnut Creek neighborhoods for families",
+   "intent": "researching",
+   "expected": {
+    "city": "Walnut Creek"
+   }
+  },
+  {
+   "query": "how much do homes with a pool cost in Indio",
+   "intent": "researching",
+   "expected": {
+    "city": "Indio",
+    "amenities": [
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "does an ADU add value to a house in Los Angeles",
+   "intent": "researching",
+   "expected": {
+    "city": "Los Angeles",
+    "amenities": [
+     "adu"
+    ]
+   }
+  },
+  {
+   "query": "compare Corona and Riverside for commuters",
+   "intent": "researching",
+   "expected": {
+    "cities": [
+     "Corona",
+     "Riverside"
+    ]
+   }
+  },
+  {
+   "query": "San Jose neighborhoods with walkable shopping and dining",
+   "intent": "researching",
+   "expected": {
+    "city": "San Jose",
+    "amenities": [
+     "walkable",
+     "shopping and dining"
+    ]
+   }
+  },
+  {
+   "query": "are vacation rentals allowed in Big Bear City cabins",
+   "intent": "researching",
+   "expected": {
+    "city": "Big Bear City",
+    "amenities": [
+     "vacation rental",
+     "cabin"
+    ]
+   }
+  },
+  {
+   "query": "quiet streets near the beach in Oceanside",
+   "intent": "researching",
+   "expected": {
+    "city": "Oceanside",
+    "amenities": [
+     "quiet street"
+    ]
+   }
+  },
+  {
+   "query": "pros and cons of manufactured homes in Hemet",
+   "intent": "researching",
+   "expected": {
+    "city": "Hemet",
+    "amenities": [
+     "manufactured home"
+    ]
+   }
+  },
+  {
+   "query": "typical HOA fees for condos in Long Beach",
+   "intent": "researching",
+   "expected": {
+    "city": "Long Beach",
+    "amenities": [
+     "condo"
+    ]
+   }
+  },
+  {
+   "query": "Pasadena areas with a strong school district and walkable streets",
+   "intent": "researching",
+   "expected": {
+    "city": "Pasadena",
+    "amenities": [
+     "school district",
+     "walkable"
+    ]
+   }
+  },
+  {
+   "query": "55+ communities in Menifee with resort style amenities and low HOA",
+   "intent": "researching",
+   "expected": {
+    "city": "Menifee",
+    "amenities": [
+     "55+ community",
+     "resort-style amenities",
+     "low hoa"
+    ]
+   }
+  },
+  {
+   "query": "is a townhome or a condo cheaper in Irvine",
+   "intent": "researching",
+   "expected": {
+    "city": "Irvine",
+    "amenities": [
+     "townhome",
+     "condo"
+    ]
+   }
+  },
+  {
+   "query": "which Simi Valley communities allow short term rentals",
+   "intent": "researching",
+   "expected": {
+    "city": "Simi Valley",
+    "amenities": [
+     "short-term rental"
+    ]
+   }
+  },
+  {
+   "query": "how long do homes take to sell in Lancaster",
+   "intent": "researching",
+   "expected": {
+    "city": "Lancaster"
+   }
+  },
+  {
+   "query": "move-in ready 4 bed 3 bath in Temecula under 1.1m",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Temecula",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "price_max": 1100000,
+    "amenities": [
+     "move-in ready"
+    ]
+   }
+  },
+  {
+   "query": "open houses this weekend in Irvine",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Irvine"
+   }
+  },
+  {
+   "query": "3br 2ba w/ pool in Hemet under 550k ready now",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Hemet",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "price_max": 550000,
+    "amenities": [
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "single story homes in Corona with 3 car garage under $900k available now",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Corona",
+    "price_max": 900000,
+    "amenities": [
+     "single story",
+     "3 car garage"
+    ]
+   }
+  },
+  {
+   "query": "turnkey townhouse in Long Beach under 750k with attached garage",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Long Beach",
+    "price_max": 750000,
+    "amenities": [
+     "turnkey",
+     "townhouse",
+     "attached garage"
+    ]
+   }
+  },
+  {
+   "query": "new listings in San Diego with ADU and solar under 1.5m",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "San Diego",
+    "price_max": 1500000,
+    "amenities": [
+     "adu",
+     "solar"
+    ]
+   }
+  },
+  {
+   "query": "homes in Murrieta w/ no HOA and RV parking ready to tour",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Murrieta",
+    "amenities": [
+     "no hoa",
+     "rv parking"
+    ]
+   }
+  },
+  {
+   "query": "schedule a showing for a remodeled 4 bedroom in Riverside",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Riverside",
+    "bedrooms": 4,
+    "amenities": [
+     "remodeled"
+    ]
+   }
+  },
+  {
+   "query": "gated community homes in Palm Desert with pool under 800k open house sunday",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Palm Desert",
+    "price_max": 800000,
+    "amenities": [
+     "gated community",
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "2,000 sqft or larger in Oceanside under $1.2M move in ready",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Oceanside",
+    "sqft_min": 2000,
+    "price_max": 1200000,
+    "amenities": [
+     "move-in ready"
+    ]
+   }
+  },
+  {
+   "query": "homes in Apple Valley with seller financing available",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Apple Valley",
+    "amenities": [
+     "seller financing"
+    ]
+   }
+  },
+  {
+   "query": "just listed condos in Pasadena under 650k with parking",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Pasadena",
+    "price_max": 650000,
+    "amenities": [
+     "condo"
+    ]
+   }
+  },
+  {
+   "query": "5 bed 4 bath cul-de-sac home in Walnut Creek, can close in 30 days",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Walnut Creek",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "amenities": [
+     "cul-de-sac"
+    ]
+   }
+  },
+  {
+   "query": "investor special in Lancaster under 400k, cash offer ready",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Lancaster",
+    "price_max": 400000,
+    "amenities": [
+     "investor special"
+    ]
+   }
+  },
+  {
+   "query": "homes w/ vacation rental license in Big Bear City under 700k",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Big Bear City",
+    "price_max": 700000,
+    "amenities": [
+     "vacation rental license"
+    ]
+   }
+  },
+  {
+   "query": "price reduced homes in Menifee with 3 car garage",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Menifee",
+    "amenities": [
+     "price reduced",
+     "3 car garage"
+    ]
+   }
+  },
+  {
+   "query": "contact agent about 3bd/2ba in Moreno Valley w/ owned solar",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Moreno Valley",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "amenities": [
+     "owned solar"
+    ]
+   }
+  },
+  {
+   "query": "fixer-upper w/ ADU potential in Victorville under 450k",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Victorville",
+    "price_max": 450000,
+    "amenities": [
+     "fixer-upper",
+     "adu"
+    ]
+   }
+  },
+  {
+   "query": "Escondido homes with mountain views, vaulted ceilings, and a home office ready to tour this week",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Escondido",
+    "amenities": [
+     "mountain views",
+     "vaulted ceilings",
+     "home office"
+    ]
+   }
+  },
+  {
+   "query": "4br in Indio w/ pool & spa, no HOA, under $700k, available immediately",
+   "intent": "high_intent_inquiry",
+   "expected": {
+    "city": "Indio",
+    "bedrooms": 4,
+    "price_max": 700000,
+    "amenities": [
+     "pool",
+     "spa",
+     "no hoa"
+    ]
+   }
+  }
+ ],
+ "heldout": [
+  {
+   "query": "3 bed 2 bath under 600k in Corona",
+   "expected": {
+    "city": "Corona",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "price_max": 600000
+   }
+  },
+  {
+   "query": "4+ bedrooms in Temecula",
+   "expected": {
+    "city": "Temecula",
+    "bedrooms_min": 4
+   }
+  },
+  {
+   "query": "at least 3 bedrooms and 2 bathrooms in Murrieta",
+   "expected": {
+    "city": "Murrieta",
+    "bedrooms_min": 3,
+    "bathrooms_min": 2
+   }
+  },
+  {
+   "query": "homes between 500k and 800k in Riverside",
+   "expected": {
+    "city": "Riverside",
+    "price_min": 500000,
+    "price_max": 800000
+   }
+  },
+  {
+   "query": "$400k-$600k condos in Long Beach",
+   "expected": {
+    "city": "Long Beach",
+    "price_min": 400000,
+    "price_max": 600000,
+    "amenities": [
+     "condo"
+    ]
+   }
+  },
+  {
+   "query": "over 1 million in Irvine",
+   "expected": {
+    "city": "Irvine",
+    "price_min": 1000000
+   }
+  },
+  {
+   "query": "up to 450,000 in Hemet",
+   "expected": {
+    "city": "Hemet",
+    "price_max": 450000
+   }
+  },
+  {
+   "query": "2 bed 1.5 bath townhouse in Oceanside",
+   "expected": {
+    "city": "Oceanside",
+    "bedrooms": 2,
+    "bathrooms": 1.5,
+    "amenities": [
+     "townhouse"
+    ]
+   }
+  },
+  {
+   "query": "homes with a pool but no HOA in Menifee",
+   "expected": {
+    "city": "Menifee",
+    "amenities": [
+     "pool",
+     "no hoa"
+    ]
+   }
+  },
+  {
+   "query": "without a pool in Indio",
+   "expected": {
+    "city": "Indio",
+    "exclude_amenities": [
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "3 bedroom house in Palm Desert with solar and without HOA",
+   "expected": {
+    "city": "Palm Desert",
+    "bedrooms": 3,
+    "amenities": [
+     "solar",
+     "no hoa"
+    ]
+   }
+  },
+  {
+   "query": "not a fixer upper in Lancaster",
+   "expected": {
+    "city": "Lancaster",
+    "exclude_amenities": [
+     "fixer-upper"
+    ]
+   }
+  },
+  {
+   "query": "2000 sqft or more in San Diego under 1.2m",
+   "expected": {
+    "city": "San Diego",
+    "sqft_min": 2000,
+    "price_max": 1200000
+   }
+  },
+  {
+   "query": "1500-2000 sq ft in Escondido",
+   "expected": {
+    "city": "Escondido",
+    "sqft_min": 1500,
+    "sqft_max": 2000
+   }
+  },
+  {
+   "query": "less than 1200 square feet in Pasadena",
+   "expected": {
+    "city": "Pasadena",
+    "sqft_max": 1200
+   }
+  },
+  {
+   "query": "3 br 2 ba with garage under 550k",
+   "expected": {
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "price_max": 550000
+   }
+  },
+  {
+   "query": "5 bedroom pool home in Walnut Creek",
+   "expected": {
+    "city": "Walnut Creek",
+    "bedrooms": 5,
+    "amenities": [
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "single story 3 bed in Corona with rv parking",
+   "expected": {
+    "city": "Corona",
+    "bedrooms": 3,
+    "amenities": [
+     "single story",
+     "rv parking"
+    ]
+   }
+  },
+  {
+   "query": "homes in Springfield under 500k",
+   "expected": {
+    "city": "Springfield",
+    "price_max": 500000
+   }
+  },
+  {
+   "query": "10 bedroom mansion in Los Angeles",
+   "expected": {
+    "city": "Los Angeles",
+    "bedrooms": 10
+   }
+  },
+  {
+   "query": "3 bed under 50k in Hemet",
+   "expected": {
+    "city": "Hemet",
+    "bedrooms": 3,
+    "price_max": 50000
+   }
+  },
+  {
+   "query": "7 bath estate in Newport Beach over 8 million",
+   "expected": {
+    "city": "Newport Beach",
+    "bathrooms": 7,
+    "price_min": 8000000
+   }
+  },
+  {
+   "query": "a 4 bed, 3 bath around 700k in Fontana",
+   "expected": {
+    "city": "Fontana",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "price_min": 630000,
+    "price_max": 770000
+   }
+  },
+  {
+   "query": "3/2 in Moreno Valley",
+   "expected": {
+    "city": "Moreno Valley",
+    "bedrooms": 3,
+    "bathrooms": 2
+   }
+  },
+  {
+   "query": "move-in ready 2br condo in Santee with fireplace",
+   "expected": {
+    "city": "Santee",
+    "bedrooms": 2,
+    "amenities": [
+     "move-in ready",
+     "condo",
+     "fireplace"
+    ]
+   }
+  },
+  {
+   "query": "homes under 900k in Fremont with a view",
+   "expected": {
+    "city": "Fremont",
+    "price_max": 900000
+   }
+  },
+  {
+   "query": "3 or more bedrooms in Victorville",
+   "expected": {
+    "city": "Victorville",
+    "bedrooms_min": 3
+   }
+  },
+  {
+   "query": "no more than 3 bedrooms in Apple Valley",
+   "expected": {
+    "city": "Apple Valley",
+    "bedrooms_max": 3
+   }
+  },
+  {
+   "query": "3 to 4 bedroom homes in Chula Vista",
+   "expected": {
+    "city": "Chula Vista",
+    "bedrooms_min": 3,
+    "bedrooms_max": 4
+   }
+  },
+  {
+   "query": "gated community homes with a pool in Rancho Cucamonga under $1.5M",
+   "expected": {
+    "city": "Rancho Cucamonga",
+    "price_max": 1500000,
+    "amenities": [
+     "gated community",
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "more than 3 bedrooms in Riverside",
+   "expected": {
+    "city": "Riverside",
+    "bedrooms_min": 4
+   }
+  },
+  {
+   "query": "fewer than 4 bathrooms in Oakland",
+   "expected": {
+    "city": "Oakland",
+    "bathrooms_max": 3
+   }
+  },
+  {
+   "query": "Show me 4 bedroom homes in San Jose, no pool",
+   "expected": {
+    "city": "San Jose",
+    "bedrooms": 4,
+    "exclude_amenities": [
+     "pool"
+    ]
+   }
+  },
+  {
+   "query": "ocean views condo in La Jolla at least 2 bath",
+   "expected": {
+    "city": "La Jolla",
+    "bathrooms_min": 2,
+    "amenities": [
+     "ocean views",
+     "condo"
+    ]
+   }
+  },
+  {
+   "query": "hello",
+   "expected": {}
+  },
+  {
+   "query": "cheap homes",
+   "expected": {}
+  },
+  {
+   "query": "Irvine or Corona 3 bed",
+   "expected": {
+    "cities": [
+     "Irvine",
+     "Corona"
+    ],
+    "bedrooms": 3
+   }
+  },
+  {
+   "query": "updated kitchen 4 bed in Torrance under 1.3 million",
+   "expected": {
+    "city": "Torrance",
+    "bedrooms": 4,
+    "price_max": 1300000,
+    "amenities": [
+     "updated kitchen"
+    ]
+   }
+  },
+  {
+   "query": "DROP TABLE rets_property; 3 bed",
+   "expected": {
+    "bedrooms": 3
+   }
+  },
+  {
+   "query": "homes in Irvine' OR '1'='1",
+   "expected": {
+    "city": "Irvine"
+   }
+  },
+  {
+   "query": "2.5 bath minimum in Carlsbad",
+   "expected": {
+    "city": "Carlsbad",
+    "bathrooms_min": 2.5
+   }
+  },
+  {
+   "query": "budget of $350,000 in Bakersfield",
+   "expected": {
+    "city": "Bakersfield",
+    "price_max": 350000
+   }
+  },
+  {
+   "query": "over 3,000 sqft in Newport Beach with ocean views",
+   "expected": {
+    "city": "Newport Beach",
+    "sqft_min": 3000,
+    "amenities": [
+     "ocean views"
+    ]
+   }
+  }
+ ]
+}

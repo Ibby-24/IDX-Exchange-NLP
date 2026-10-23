@@ -1,0 +1,121 @@
+{
+ "week1": {
+  "queries": 60,
+  "exact": 60,
+  "accuracy": 1.0,
+  "valid_after_parse": 60,
+  "fields": {
+   "city": {
+    "tp": 59
+   },
+   "amenities": {
+    "tp": 46
+   },
+   "bedrooms": {
+    "tp": 7
+   },
+   "exclude_amenities": {
+    "tp": 1
+   },
+   "cities": {
+    "tp": 1
+   },
+   "price_max": {
+    "tp": 12
+   },
+   "bathrooms": {
+    "tp": 4
+   },
+   "sqft_min": {
+    "tp": 1
+   }
+  },
+  "failures": 0,
+  "patterns_used": [
+   "amenity",
+   "amenity_negated",
+   "amenity_no_hoa",
+   "city_known",
+   "count_exact",
+   "price_max_word",
+   "sqft_min_post"
+  ]
+ },
+ "heldout": {
+  "queries": 43,
+  "exact": 43,
+  "accuracy": 1.0,
+  "valid_after_parse": 39,
+  "fields": {
+   "bathrooms": {
+    "tp": 6
+   },
+   "price_max": {
+    "tp": 13
+   },
+   "city": {
+    "tp": 38
+   },
+   "bedrooms": {
+    "tp": 15
+   },
+   "bedrooms_min": {
+    "tp": 5
+   },
+   "bathrooms_min": {
+    "tp": 3
+   },
+   "price_min": {
+    "tp": 5
+   },
+   "amenities": {
+    "tp": 11
+   },
+   "exclude_amenities": {
+    "tp": 3
+   },
+   "sqft_min": {
+    "tp": 3
+   },
+   "sqft_max": {
+    "tp": 2
+   },
+   "bedrooms_max": {
+    "tp": 2
+   },
+   "bathrooms_max": {
+    "tp": 1
+   },
+   "cities": {
+    "tp": 1
+   }
+  },
+  "failures": 0,
+  "patterns_used": [
+   "amenity",
+   "amenity_negated",
+   "amenity_no_hoa",
+   "beds_baths_slash",
+   "city_known",
+   "city_unknown",
+   "count_exact",
+   "count_fewer_than",
+   "count_inherit",
+   "count_max_word",
+   "count_min_word",
+   "count_more_than",
+   "count_or_more",
+   "count_plus",
+   "count_range",
+   "price_around",
+   "price_between",
+   "price_dash_range",
+   "price_max_word",
+   "price_min_word",
+   "sqft_max_word",
+   "sqft_min_post",
+   "sqft_min_word",
+   "sqft_range"
+  ]
+ }
+}
