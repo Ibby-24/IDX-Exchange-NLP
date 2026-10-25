@@ -1,0 +1,321 @@
+{
+ "encoder": "all-MiniLM-L6-v2",
+ "relevant_min": 1,
+ "queries": 20,
+ "info": {
+  "listings": 1260,
+  "judged_in_corpus": [
+   633,
+   633
+  ],
+  "bm25_build_s": 1.06,
+  "semantic_build_s": 64.74,
+  "semantic": {
+   "listings": 1260,
+   "passages": 3455,
+   "dim": 384,
+   "backend": "faiss-flat-ip",
+   "encoder": "all-MiniLM-L6-v2",
+   "chunk_words": 100,
+   "chunk_overlap": 20
+  },
+  "semantic_whole": {
+   "listings": 1260,
+   "passages": 1260,
+   "dim": 384,
+   "backend": "faiss-flat-ip",
+   "encoder": "all-MiniLM-L6-v2",
+   "chunk_words": null,
+   "chunk_overlap": 0
+  }
+ },
+ "summary": {
+  "bm25": {
+   "p5": 0.95,
+   "p10": 0.92,
+   "ndcg10": 0.852,
+   "mrr": 0.975,
+   "unjudged10": 0.0,
+   "strict_p10": 0.765,
+   "p10_max": 0.92
+  },
+  "semantic": {
+   "p5": 0.86,
+   "p10": 0.795,
+   "ndcg10": 0.728,
+   "mrr": 0.95,
+   "unjudged10": 0.0,
+   "strict_p10": 0.58,
+   "p10_max": 0.795
+  },
+  "semantic-whole": {
+   "p5": 0.51,
+   "p10": 0.42,
+   "ndcg10": 0.4223,
+   "mrr": 0.7458,
+   "unjudged10": 0.505,
+   "strict_p10": 0.335,
+   "p10_max": 0.925
+  },
+  "hybrid-rrf": {
+   "p5": 0.93,
+   "p10": 0.91,
+   "ndcg10": 0.853,
+   "mrr": 0.9667,
+   "unjudged10": 0.0,
+   "strict_p10": 0.75,
+   "p10_max": 0.91
+  }
+ },
+ "comparisons": {
+  "semantic - bm25": {
+   "mean_diff": -0.124,
+   "ci95": [
+    -0.2412,
+    -0.0079
+   ],
+   "wins": 5,
+   "ties": 2,
+   "losses": 13,
+   "significant": true
+  },
+  "hybrid-rrf - bm25": {
+   "mean_diff": 0.001,
+   "ci95": [
+    -0.0503,
+    0.0485
+   ],
+   "wins": 10,
+   "ties": 3,
+   "losses": 7,
+   "significant": false
+  },
+  "hybrid-rrf - semantic": {
+   "mean_diff": 0.125,
+   "ci95": [
+    0.0453,
+    0.2086
+   ],
+   "wins": 15,
+   "ties": 1,
+   "losses": 4,
+   "significant": true
+  },
+  "semantic - semantic-whole": {
+   "mean_diff": 0.3057,
+   "ci95": [
+    0.2175,
+    0.4024
+   ],
+   "wins": 19,
+   "ties": 0,
+   "losses": 1,
+   "significant": true
+  }
+ },
+ "by_type": {
+  "concept": {
+   "n": 10,
+   "bm25": 0.871,
+   "semantic": 0.798,
+   "semantic-whole": 0.532,
+   "hybrid-rrf": 0.91
+  },
+  "lexical": {
+   "n": 5,
+   "bm25": 0.877,
+   "semantic": 0.506,
+   "semantic-whole": 0.23,
+   "hybrid-rrf": 0.754
+  },
+  "mixed": {
+   "n": 5,
+   "bm25": 0.789,
+   "semantic": 0.809,
+   "semantic-whole": 0.396,
+   "hybrid-rrf": 0.839
+  }
+ },
+ "per_query": [
+  {
+   "id": "q01",
+   "type": "concept",
+   "query": "quiet peaceful neighborhood good for raising a young family",
+   "ndcg10_bm25": 0.355,
+   "ndcg10_semantic": 0.846,
+   "ndcg10_semantic-whole": 0.632,
+   "ndcg10_hybrid-rrf": 0.567
+  },
+  {
+   "id": "q02",
+   "type": "concept",
+   "query": "perfect for hosting big gatherings and entertaining outdoors",
+   "ndcg10_bm25": 0.903,
+   "ndcg10_semantic": 0.932,
+   "ndcg10_semantic-whole": 0.22,
+   "ndcg10_hybrid-rrf": 1.0
+  },
+  {
+   "id": "q03",
+   "type": "concept",
+   "query": "investor opportunity needs renovation priced below market",
+   "ndcg10_bm25": 1.0,
+   "ndcg10_semantic": 0.599,
+   "ndcg10_semantic-whole": 0.715,
+   "ndcg10_hybrid-rrf": 0.932
+  },
+  {
+   "id": "q04",
+   "type": "concept",
+   "query": "energy efficient home with low electric bills",
+   "ndcg10_bm25": 1.0,
+   "ndcg10_semantic": 1.0,
+   "ndcg10_semantic-whole": 0.772,
+   "ndcg10_hybrid-rrf": 1.0
+  },
+  {
+   "id": "q05",
+   "type": "concept",
+   "query": "mountain getaway cabin surrounded by trees",
+   "ndcg10_bm25": 0.859,
+   "ndcg10_semantic": 0.892,
+   "ndcg10_semantic-whole": 0.8,
+   "ndcg10_hybrid-rrf": 0.93
+  },
+  {
+   "id": "q06",
+   "type": "concept",
+   "query": "ready to move in no work needed",
+   "ndcg10_bm25": 0.861,
+   "ndcg10_semantic": 0.819,
+   "ndcg10_semantic-whole": 0.412,
+   "ndcg10_hybrid-rrf": 0.936
+  },
+  {
+   "id": "q07",
+   "type": "concept",
+   "query": "separate living space for relatives or rental income",
+   "ndcg10_bm25": 0.89,
+   "ndcg10_semantic": 0.755,
+   "ndcg10_semantic-whole": 0.624,
+   "ndcg10_hybrid-rrf": 0.967
+  },
+  {
+   "id": "q08",
+   "type": "concept",
+   "query": "easy commute close to the freeway",
+   "ndcg10_bm25": 0.953,
+   "ndcg10_semantic": 0.89,
+   "ndcg10_semantic-whole": 0.478,
+   "ndcg10_hybrid-rrf": 1.0
+  },
+  {
+   "id": "q09",
+   "type": "concept",
+   "query": "retirement community with social activities",
+   "ndcg10_bm25": 0.965,
+   "ndcg10_semantic": 0.64,
+   "ndcg10_semantic-whole": 0.487,
+   "ndcg10_hybrid-rrf": 0.902
+  },
+  {
+   "id": "q10",
+   "type": "concept",
+   "query": "luxury home with high end finishes and designer details",
+   "ndcg10_bm25": 0.926,
+   "ndcg10_semantic": 0.611,
+   "ndcg10_semantic-whole": 0.177,
+   "ndcg10_hybrid-rrf": 0.863
+  },
+  {
+   "id": "q11",
+   "type": "mixed",
+   "query": "bright open kitchen great for cooking",
+   "ndcg10_bm25": 0.77,
+   "ndcg10_semantic": 0.968,
+   "ndcg10_semantic-whole": 0.161,
+   "ndcg10_hybrid-rrf": 0.908
+  },
+  {
+   "id": "q12",
+   "type": "mixed",
+   "query": "spacious backyard with room for kids and pets to play",
+   "ndcg10_bm25": 0.625,
+   "ndcg10_semantic": 0.76,
+   "ndcg10_semantic-whole": 0.359,
+   "ndcg10_hybrid-rrf": 0.733
+  },
+  {
+   "id": "q13",
+   "type": "mixed",
+   "query": "walk to shops restaurants and coffee",
+   "ndcg10_bm25": 0.803,
+   "ndcg10_semantic": 0.654,
+   "ndcg10_semantic-whole": 0.398,
+   "ndcg10_hybrid-rrf": 0.777
+  },
+  {
+   "id": "q14",
+   "type": "mixed",
+   "query": "stunning views of the city lights",
+   "ndcg10_bm25": 0.818,
+   "ndcg10_semantic": 0.744,
+   "ndcg10_semantic-whole": 0.197,
+   "ndcg10_hybrid-rrf": 0.83
+  },
+  {
+   "id": "q15",
+   "type": "mixed",
+   "query": "land with room for horses and animals",
+   "ndcg10_bm25": 0.926,
+   "ndcg10_semantic": 0.919,
+   "ndcg10_semantic-whole": 0.864,
+   "ndcg10_hybrid-rrf": 0.945
+  },
+  {
+   "id": "q16",
+   "type": "lexical",
+   "query": "wet bar",
+   "ndcg10_bm25": 1.0,
+   "ndcg10_semantic": 0.4,
+   "ndcg10_semantic-whole": 0.164,
+   "ndcg10_hybrid-rrf": 1.0
+  },
+  {
+   "id": "q17",
+   "type": "lexical",
+   "query": "RV parking",
+   "ndcg10_bm25": 0.931,
+   "ndcg10_semantic": 0.856,
+   "ndcg10_semantic-whole": 0.566,
+   "ndcg10_hybrid-rrf": 0.933
+  },
+  {
+   "id": "q18",
+   "type": "lexical",
+   "query": "tankless water heater",
+   "ndcg10_bm25": 1.0,
+   "ndcg10_semantic": 0.36,
+   "ndcg10_semantic-whole": 0.0,
+   "ndcg10_hybrid-rrf": 0.71
+  },
+  {
+   "id": "q19",
+   "type": "lexical",
+   "query": "vaulted ceilings with skylights",
+   "ndcg10_bm25": 1.0,
+   "ndcg10_semantic": 0.514,
+   "ndcg10_semantic-whole": 0.25,
+   "ndcg10_hybrid-rrf": 0.788
+  },
+  {
+   "id": "q20",
+   "type": "lexical",
+   "query": "no HOA",
+   "ndcg10_bm25": 0.454,
+   "ndcg10_semantic": 0.4,
+   "ndcg10_semantic-whole": 0.168,
+   "ndcg10_hybrid-rrf": 0.337
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "spec_limit_ms": 100.0,
+ "vector_search": [
+  {
+   "p50_ms": 0.288,
+   "p95_ms": 0.344,
+   "p99_ms": 0.364,
+   "mean_ms": 0.294,
+   "runs": 200,
+   "listings": 1000,
+   "passages": 4000,
+   "dim": 384,
+   "backend": "faiss-flat-ip"
+  },
+  {
+   "p50_ms": 4.16,
+   "p95_ms": 5.348,
+   "p99_ms": 6.784,
+   "mean_ms": 4.209,
+   "runs": 200,
+   "listings": 10000,
+   "passages": 40000,
+   "dim": 384,
+   "backend": "faiss-flat-ip"
+  },
+  {
+   "p50_ms": 29.927,
+   "p95_ms": 42.889,
+   "p99_ms": 48.495,
+   "mean_ms": 31.744,
+   "runs": 200,
+   "listings": 50000,
+   "passages": 200000,
+   "dim": 384,
+   "backend": "faiss-flat-ip"
+  },
+  {
+   "p50_ms": 0.164,
+   "p95_ms": 0.244,
+   "p99_ms": 0.316,
+   "mean_ms": 0.182,
+   "runs": 200,
+   "listings": 1000,
+   "passages": 4000,
+   "dim": 384,
+   "backend": "numpy"
+  },
+  {
+   "p50_ms": 1.4,
+   "p95_ms": 1.678,
+   "p99_ms": 1.818,
+   "mean_ms": 1.444,
+   "runs": 200,
+   "listings": 10000,
+   "passages": 40000,
+   "dim": 384,
+   "backend": "numpy"
+  },
+  {
+   "p50_ms": 14.224,
+   "p95_ms": 19.502,
+   "p99_ms": 24.735,
+   "mean_ms": 15.041,
+   "runs": 200,
+   "listings": 50000,
+   "passages": 200000,
+   "dim": 384,
+   "backend": "numpy"
+  }
+ ],
+ "full_path": {
+  "p50_ms": 23.518,
+  "p95_ms": 28.112,
+  "p99_ms": 34.692,
+  "mean_ms": 24.382,
+  "runs": 200,
+  "listings": 1000,
+  "passages": 2730,
+  "dim": 384,
+  "backend": "faiss-flat-ip",
+  "encoder": "lsa-tfidf-svd",
+  "chunk_words": 100,
+  "chunk_overlap": 20,
+  "index_build_s": 7.0,
+  "query_encoding": {
+   "p50_ms": 22.99,
+   "p95_ms": 28.202,
+   "p99_ms": 31.036,
+   "mean_ms": 23.859,
+   "runs": 200
+  }
+ }
+}
