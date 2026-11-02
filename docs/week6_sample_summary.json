@@ -1,0 +1,122 @@
+{
+ "listings": 1000,
+ "with_remarks": 1000,
+ "seconds": 13.5,
+ "listings_per_second": 74.0,
+ "signal_listing_counts": {
+  "renovated_updated": 465,
+  "new_construction": 49,
+  "new_components": 294,
+  "move_in_ready": 235,
+  "well_maintained": 154,
+  "needs_work": 63,
+  "seller_financing": 6,
+  "assumable_loan": 4,
+  "fha": 9,
+  "va": 10,
+  "cash_only": 2,
+  "exchange_1031": 1,
+  "short_sale": 2,
+  "reo": 1,
+  "probate_estate": 3,
+  "tenant_occupied": 8,
+  "investment_income": 189,
+  "seller_credit": 13,
+  "motivated_seller": 56,
+  "gated_community": 133,
+  "golf_course": 82,
+  "near_schools": 238,
+  "near_shopping_dining": 487,
+  "freeway_commute": 290,
+  "public_transit": 64,
+  "walkable": 109,
+  "near_beach_water": 192,
+  "waterfront": 32,
+  "views": 242,
+  "quiet_street": 188,
+  "parks_open_space": 366,
+  "senior_55plus": 37,
+  "near_downtown": 81
+ },
+ "signal_rates": {
+  "renovated_updated": 0.465,
+  "new_construction": 0.049,
+  "new_components": 0.294,
+  "move_in_ready": 0.235,
+  "well_maintained": 0.154,
+  "needs_work": 0.063,
+  "seller_financing": 0.006,
+  "assumable_loan": 0.004,
+  "fha": 0.009,
+  "va": 0.01,
+  "cash_only": 0.002,
+  "exchange_1031": 0.001,
+  "short_sale": 0.002,
+  "reo": 0.001,
+  "probate_estate": 0.003,
+  "tenant_occupied": 0.008,
+  "investment_income": 0.189,
+  "seller_credit": 0.013,
+  "motivated_seller": 0.056,
+  "gated_community": 0.133,
+  "golf_course": 0.082,
+  "near_schools": 0.238,
+  "near_shopping_dining": 0.487,
+  "freeway_commute": 0.29,
+  "public_transit": 0.064,
+  "walkable": 0.109,
+  "near_beach_water": 0.192,
+  "waterfront": 0.032,
+  "views": 0.242,
+  "quiet_street": 0.188,
+  "parks_open_space": 0.366,
+  "senior_55plus": 0.037,
+  "near_downtown": 0.081
+ },
+ "families_with_any_signal": {
+  "condition": 0.69,
+  "financing": 0.261,
+  "location": 0.842
+ },
+ "fields": {
+  "hoa": {
+   "present": 62,
+   "none": 30,
+   "low": 30
+  },
+  "mello_roos": {
+   "none": 8,
+   "present": 1
+  }
+ },
+ "entity_fill_rate": {
+  "bedrooms": 0.688,
+  "bathrooms": 0.608,
+  "sqft": 0.333,
+  "price": 0.007
+ },
+ "listings_with_amenities": 0.975,
+ "agreement_with_db_columns": {
+  "bedrooms": {
+   "both_present": 688,
+   "agree": 615,
+   "agreement": 0.8939,
+   "db_missing_extracted_present": 1,
+   "db_present_extracted_missing": 311
+  },
+  "bathrooms": {
+   "both_present": 608,
+   "agree": 553,
+   "agreement": 0.9095,
+   "db_missing_extracted_present": 0,
+   "db_present_extracted_missing": 392
+  },
+  "price": {
+   "both_present": 7,
+   "agree": 4,
+   "agreement": 0.5714,
+   "db_missing_extracted_present": 0,
+   "db_present_extracted_missing": 993
+  }
+ }
+}

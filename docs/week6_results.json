@@ -1,0 +1,878 @@
+{
+ "dev": {
+  "free_text": {
+   "overall": {
+    "precision": 0.996,
+    "recall": 0.955,
+    "f1": 0.976,
+    "tp": 279,
+    "fp": 1,
+    "fn": 13,
+    "gold_positives": 292
+   },
+   "families": {
+    "condition": {
+     "precision": 0.985,
+     "recall": 0.97,
+     "f1": 0.977,
+     "tp": 64,
+     "fp": 1,
+     "fn": 2,
+     "gold_positives": 66
+    },
+    "financing": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 28,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 28
+    },
+    "location": {
+     "precision": 1.0,
+     "recall": 0.944,
+     "f1": 0.971,
+     "tp": 187,
+     "fp": 0,
+     "fn": 11,
+     "gold_positives": 198
+    }
+   },
+   "signals": {
+    "renovated_updated": {
+     "precision": 0.957,
+     "recall": 0.957,
+     "f1": 0.957,
+     "tp": 22,
+     "fp": 1,
+     "fn": 1,
+     "gold_positives": 23,
+     "family": "condition"
+    },
+    "new_construction": {
+     "precision": 1.0,
+     "recall": 0.833,
+     "f1": 0.909,
+     "tp": 5,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 6,
+     "family": "condition"
+    },
+    "new_components": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 14,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 14,
+     "family": "condition"
+    },
+    "move_in_ready": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 12,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 12,
+     "family": "condition"
+    },
+    "well_maintained": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 8,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 8,
+     "family": "condition"
+    },
+    "needs_work": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 3,
+     "family": "condition"
+    },
+    "seller_financing": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 3,
+     "family": "financing"
+    },
+    "assumable_loan": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 2,
+     "family": "financing"
+    },
+    "fha": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 1,
+     "family": "financing"
+    },
+    "va": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 1,
+     "family": "financing"
+    },
+    "cash_only": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "exchange_1031": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "short_sale": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "reo": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "probate_estate": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "tenant_occupied": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "investment_income": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 14,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 14,
+     "family": "financing"
+    },
+    "seller_credit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 1,
+     "family": "financing"
+    },
+    "motivated_seller": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 6,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 6,
+     "family": "financing"
+    },
+    "gated_community": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 10,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 10,
+     "family": "location"
+    },
+    "golf_course": {
+     "precision": 1.0,
+     "recall": 0.833,
+     "f1": 0.909,
+     "tp": 5,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 6,
+     "family": "location"
+    },
+    "near_schools": {
+     "precision": 1.0,
+     "recall": 0.909,
+     "f1": 0.952,
+     "tp": 20,
+     "fp": 0,
+     "fn": 2,
+     "gold_positives": 22,
+     "family": "location"
+    },
+    "near_shopping_dining": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 34,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 34,
+     "family": "location"
+    },
+    "freeway_commute": {
+     "precision": 1.0,
+     "recall": 0.944,
+     "f1": 0.971,
+     "tp": 17,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 18,
+     "family": "location"
+    },
+    "public_transit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 3,
+     "family": "location"
+    },
+    "walkable": {
+     "precision": 1.0,
+     "recall": 0.889,
+     "f1": 0.941,
+     "tp": 8,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 9,
+     "family": "location"
+    },
+    "near_beach_water": {
+     "precision": 1.0,
+     "recall": 0.952,
+     "f1": 0.976,
+     "tp": 20,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 21,
+     "family": "location"
+    },
+    "waterfront": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 1,
+     "family": "location"
+    },
+    "views": {
+     "precision": 1.0,
+     "recall": 0.96,
+     "f1": 0.98,
+     "tp": 24,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 25,
+     "family": "location"
+    },
+    "quiet_street": {
+     "precision": 1.0,
+     "recall": 0.889,
+     "f1": 0.941,
+     "tp": 16,
+     "fp": 0,
+     "fn": 2,
+     "gold_positives": 18,
+     "family": "location"
+    },
+    "parks_open_space": {
+     "precision": 1.0,
+     "recall": 0.957,
+     "f1": 0.978,
+     "tp": 22,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 23,
+     "family": "location"
+    },
+    "senior_55plus": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 4,
+     "family": "location"
+    },
+    "near_downtown": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.857,
+     "tp": 3,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 4,
+     "family": "location"
+    }
+   }
+  },
+  "fields": {
+   "hoa": {
+    "n": 5,
+    "correct": 5
+   },
+   "mello_roos": {}
+  },
+  "structured": {
+   "bedrooms": {
+    "precision": 0.968,
+    "recall": 1.0,
+    "f1": 0.984,
+    "exact_match_accuracy": 0.979,
+    "listings": 145,
+    "gold_positives": 92,
+    "tp": 92,
+    "fp": 3,
+    "fn": 0
+   },
+   "bathrooms": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_match_accuracy": 1.0,
+    "listings": 146,
+    "gold_positives": 87,
+    "tp": 87,
+    "fp": 0,
+    "fn": 0
+   },
+   "sqft": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_match_accuracy": 1.0,
+    "listings": 148,
+    "gold_positives": 45,
+    "tp": 45,
+    "fp": 0,
+    "fn": 0
+   },
+   "price": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889,
+    "exact_match_accuracy": 0.995,
+    "listings": 186,
+    "gold_positives": 5,
+    "tp": 4,
+    "fp": 0,
+    "fn": 1
+   },
+   "overall": {
+    "precision": 0.987,
+    "recall": 0.996,
+    "f1": 0.991,
+    "exact_match_accuracy": 0.994,
+    "tp": 228,
+    "fp": 3,
+    "fn": 1
+   }
+  },
+  "listings_scored": 66,
+  "structured_listings": 186
+ },
+ "test": {
+  "free_text": {
+   "overall": {
+    "precision": 0.898,
+    "recall": 0.857,
+    "f1": 0.877,
+    "tp": 203,
+    "fp": 23,
+    "fn": 34,
+    "gold_positives": 237
+   },
+   "families": {
+    "condition": {
+     "precision": 0.92,
+     "recall": 0.908,
+     "f1": 0.914,
+     "tp": 69,
+     "fp": 6,
+     "fn": 7,
+     "gold_positives": 76
+    },
+    "financing": {
+     "precision": 0.778,
+     "recall": 0.778,
+     "f1": 0.778,
+     "tp": 7,
+     "fp": 2,
+     "fn": 2,
+     "gold_positives": 9
+    },
+    "location": {
+     "precision": 0.894,
+     "recall": 0.836,
+     "f1": 0.864,
+     "tp": 127,
+     "fp": 15,
+     "fn": 25,
+     "gold_positives": 152
+    }
+   },
+   "signals": {
+    "renovated_updated": {
+     "precision": 0.929,
+     "recall": 0.929,
+     "f1": 0.929,
+     "tp": 26,
+     "fp": 2,
+     "fn": 2,
+     "gold_positives": 28,
+     "family": "condition"
+    },
+    "new_construction": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 2,
+     "family": "condition"
+    },
+    "new_components": {
+     "precision": 1.0,
+     "recall": 0.85,
+     "f1": 0.919,
+     "tp": 17,
+     "fp": 0,
+     "fn": 3,
+     "gold_positives": 20,
+     "family": "condition"
+    },
+    "move_in_ready": {
+     "precision": 0.889,
+     "recall": 1.0,
+     "f1": 0.941,
+     "tp": 16,
+     "fp": 2,
+     "fn": 0,
+     "gold_positives": 16,
+     "family": "condition"
+    },
+    "well_maintained": {
+     "precision": 0.778,
+     "recall": 1.0,
+     "f1": 0.875,
+     "tp": 7,
+     "fp": 2,
+     "fn": 0,
+     "gold_positives": 7,
+     "family": "condition"
+    },
+    "needs_work": {
+     "precision": 1.0,
+     "recall": 0.333,
+     "f1": 0.5,
+     "tp": 1,
+     "fp": 0,
+     "fn": 2,
+     "gold_positives": 3,
+     "family": "condition"
+    },
+    "seller_financing": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "assumable_loan": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "fha": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 1,
+     "family": "financing"
+    },
+    "va": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 1,
+     "family": "financing"
+    },
+    "cash_only": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "exchange_1031": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "short_sale": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "reo": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "probate_estate": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "tenant_occupied": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 0,
+     "family": "financing"
+    },
+    "investment_income": {
+     "precision": 0.5,
+     "recall": 0.667,
+     "f1": 0.571,
+     "tp": 2,
+     "fp": 2,
+     "fn": 1,
+     "gold_positives": 3,
+     "family": "financing"
+    },
+    "seller_credit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 2,
+     "family": "financing"
+    },
+    "motivated_seller": {
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.667,
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 2,
+     "family": "financing"
+    },
+    "gated_community": {
+     "precision": 0.8,
+     "recall": 0.889,
+     "f1": 0.842,
+     "tp": 8,
+     "fp": 2,
+     "fn": 1,
+     "gold_positives": 9,
+     "family": "location"
+    },
+    "golf_course": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 6,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 6,
+     "family": "location"
+    },
+    "near_schools": {
+     "precision": 0.889,
+     "recall": 0.8,
+     "f1": 0.842,
+     "tp": 8,
+     "fp": 1,
+     "fn": 2,
+     "gold_positives": 10,
+     "family": "location"
+    },
+    "near_shopping_dining": {
+     "precision": 0.833,
+     "recall": 0.952,
+     "f1": 0.889,
+     "tp": 20,
+     "fp": 4,
+     "fn": 1,
+     "gold_positives": 21,
+     "family": "location"
+    },
+    "freeway_commute": {
+     "precision": 0.818,
+     "recall": 1.0,
+     "f1": 0.9,
+     "tp": 9,
+     "fp": 2,
+     "fn": 0,
+     "gold_positives": 9,
+     "family": "location"
+    },
+    "public_transit": {
+     "precision": 1.0,
+     "recall": 0.833,
+     "f1": 0.909,
+     "tp": 5,
+     "fp": 0,
+     "fn": 1,
+     "gold_positives": 6,
+     "family": "location"
+    },
+    "walkable": {
+     "precision": 1.0,
+     "recall": 0.778,
+     "f1": 0.875,
+     "tp": 7,
+     "fp": 0,
+     "fn": 2,
+     "gold_positives": 9,
+     "family": "location"
+    },
+    "near_beach_water": {
+     "precision": 0.938,
+     "recall": 0.833,
+     "f1": 0.882,
+     "tp": 15,
+     "fp": 1,
+     "fn": 3,
+     "gold_positives": 18,
+     "family": "location"
+    },
+    "waterfront": {
+     "precision": 0.5,
+     "recall": 0.667,
+     "f1": 0.571,
+     "tp": 2,
+     "fp": 2,
+     "fn": 1,
+     "gold_positives": 3,
+     "family": "location"
+    },
+    "views": {
+     "precision": 1.0,
+     "recall": 0.714,
+     "f1": 0.833,
+     "tp": 15,
+     "fp": 0,
+     "fn": 6,
+     "gold_positives": 21,
+     "family": "location"
+    },
+    "quiet_street": {
+     "precision": 1.0,
+     "recall": 0.818,
+     "f1": 0.9,
+     "tp": 9,
+     "fp": 0,
+     "fn": 2,
+     "gold_positives": 11,
+     "family": "location"
+    },
+    "parks_open_space": {
+     "precision": 0.875,
+     "recall": 0.875,
+     "f1": 0.875,
+     "tp": 14,
+     "fp": 2,
+     "fn": 2,
+     "gold_positives": 16,
+     "family": "location"
+    },
+    "senior_55plus": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "gold_positives": 4,
+     "family": "location"
+    },
+    "near_downtown": {
+     "precision": 0.833,
+     "recall": 0.556,
+     "f1": 0.667,
+     "tp": 5,
+     "fp": 1,
+     "fn": 4,
+     "gold_positives": 9,
+     "family": "location"
+    }
+   }
+  },
+  "fields": {
+   "hoa": {
+    "n": 5,
+    "correct": 5
+   },
+   "mello_roos": {}
+  },
+  "structured": {
+   "bedrooms": {
+    "precision": 0.932,
+    "recall": 0.972,
+    "f1": 0.952,
+    "exact_match_accuracy": 0.93,
+    "listings": 100,
+    "gold_positives": 71,
+    "tp": 69,
+    "fp": 5,
+    "fn": 2
+   },
+   "bathrooms": {
+    "precision": 0.955,
+    "recall": 0.94,
+    "f1": 0.947,
+    "exact_match_accuracy": 0.95,
+    "listings": 100,
+    "gold_positives": 67,
+    "tp": 63,
+    "fp": 3,
+    "fn": 4
+   },
+   "sqft": {
+    "precision": 0.949,
+    "recall": 0.925,
+    "f1": 0.937,
+    "exact_match_accuracy": 0.96,
+    "listings": 99,
+    "gold_positives": 40,
+    "tp": 37,
+    "fp": 2,
+    "fn": 3
+   },
+   "price": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "exact_match_accuracy": 1.0,
+    "listings": 108,
+    "gold_positives": 3,
+    "tp": 3,
+    "fp": 0,
+    "fn": 0
+   },
+   "overall": {
+    "precision": 0.945,
+    "recall": 0.95,
+    "f1": 0.948,
+    "exact_match_accuracy": 0.961,
+    "tp": 172,
+    "fp": 10,
+    "fn": 9
+   }
+  },
+  "listings_scored": 54,
+  "structured_listings": 108
+ }
+}

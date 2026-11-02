@@ -1,0 +1,1498 @@
+{
+ "version": 1,
+ "notes": {
+  "privacy": "No listing text is stored: ids, split, labels and a SHA-1 of the Week 2 cleaned text (detects drift).",
+  "guidelines": "docs/signal_guidelines.md (written before labeling).",
+  "annotator": "single annotator (the AI assistant), labeled blind to the extractor; a human spot-check is recommended.",
+  "fields": "hoa in {none,low,present,null}; mello_roos in {none,present,null}; null = not mentioned.",
+  "sampling": "120 listings drawn with seed 606 from the 1,000-listing sample; 66 dev / 54 test.",
+  "adjudication": "4 dev labels (3 listings) were corrected after dev disagreements were reviewed against docs/signal_guidelines.md; test labels were not touched. See docs/week6_report.md."
+ },
+ "listings": {
+  "1189472279": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "3739f0c8b64d9cde8eaf4c22d9a3dab115d9f9a3"
+  },
+  "1117683715": {
+   "split": "dev",
+   "signals": [
+    "near_schools",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "82bc13953756cd48c733e3c3564c5f809dc16988"
+  },
+  "1176906719": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "golf_course",
+    "renovated_updated",
+    "senior_55plus"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "c763536d1680804bafd25b3c92ac795de339cbea"
+  },
+  "1152899575": {
+   "split": "dev",
+   "signals": [
+    "parks_open_space",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "f219ba598f1726b9987c81c9ad777c140291bfdb"
+  },
+  "1176446860": {
+   "split": "dev",
+   "signals": [
+    "golf_course",
+    "investment_income",
+    "move_in_ready",
+    "near_shopping_dining",
+    "parks_open_space",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d698cbcc915243dcc910e3733019b5898a151f2a"
+  },
+  "1157602184": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "motivated_seller",
+    "near_beach_water",
+    "new_components",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "778ebbd5f67542fc0da21a1ffa86aeba202e97be"
+  },
+  "1177093813": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "new_components",
+    "quiet_street",
+    "renovated_updated",
+    "seller_credit"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "28b6031128aa34ff71020961864a2025d268b617"
+  },
+  "1191028559": {
+   "split": "dev",
+   "signals": [],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "5abccf1b0907a7fbfa61d2bdf21e1317d625d75b"
+  },
+  "1149482657": {
+   "split": "dev",
+   "signals": [
+    "near_beach_water",
+    "near_shopping_dining",
+    "renovated_updated",
+    "views",
+    "walkable"
+   ],
+   "hoa": "present",
+   "mello_roos": null,
+   "text_sha1": "c141b471da2e0d823156471ea140dfe41d3419ed"
+  },
+  "1176674140": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "new_construction",
+    "parks_open_space",
+    "renovated_updated",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "bbd6fdfcaa9c0ccd749133ce5eec55c4ef57b415"
+  },
+  "1178809029": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "move_in_ready",
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "9c90eaecd8af57f5ca13d565047aa77872c78305"
+  },
+  "1154860627": {
+   "split": "test",
+   "signals": [
+    "renovated_updated"
+   ],
+   "hoa": "present",
+   "mello_roos": null,
+   "text_sha1": "ee17c50ab409e3385a0f819938e46752d8b76adf"
+  },
+  "1181951391": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "needs_work",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "cedfef43e9e4a480f283cd3286231d61d8d08270"
+  },
+  "1168776690": {
+   "split": "test",
+   "signals": [
+    "investment_income",
+    "motivated_seller",
+    "needs_work",
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "16e258c999ac4e45467c97c67cd6d4335ad0b949"
+  },
+  "1185670999": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "near_beach_water",
+    "new_components",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d303348a317b5826dc893a3876dccee608cad232"
+  },
+  "1189284830": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "move_in_ready",
+    "near_schools",
+    "near_shopping_dining",
+    "quiet_street",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "00efcb89079b7ed408030c5097172e421c437181"
+  },
+  "1177145107": {
+   "split": "dev",
+   "signals": [
+    "move_in_ready",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "renovated_updated"
+   ],
+   "hoa": "present",
+   "mello_roos": null,
+   "text_sha1": "f5b68d8214a70055b8faa681457ff52952d46895"
+  },
+  "1190226992": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "near_downtown",
+    "near_shopping_dining",
+    "new_components",
+    "public_transit",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "ba7bd08b04952302d70710f2d2ecb2c6c56a0959"
+  },
+  "1176218077": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "near_downtown",
+    "views",
+    "walkable",
+    "waterfront"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "a8c24d5f8b630a2fd81307c75d51a06b5d72083d"
+  },
+  "1190788414": {
+   "split": "dev",
+   "signals": [
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "3da41b51421e11447bc9d42f421ce761675eec31"
+  },
+  "1178585962": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "golf_course",
+    "parks_open_space",
+    "senior_55plus",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "6c682a5d4a78c51fee9e4df54a4450db7b15d5a6"
+  },
+  "1178023061": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "near_shopping_dining",
+    "public_transit"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "8c37f9ae2ff21ec3bf2133edd96658c4bbba76a3"
+  },
+  "1183146127": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "near_beach_water",
+    "near_downtown",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "public_transit",
+    "renovated_updated",
+    "views",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "54ef56ff6fbe2e2613a821ebf7db3a83d8c5f67c"
+  },
+  "1189403255": {
+   "split": "test",
+   "signals": [
+    "needs_work",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "2f3b25014b11512b101ef25974d8590af7d32f9f"
+  },
+  "1180359610": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "near_beach_water",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "a0b688837683bbca92bf1e750d10a19862df627f"
+  },
+  "1190847563": {
+   "split": "dev",
+   "signals": [
+    "views",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "4cc94326a3ab1893854a30ca5163ae3a52ae951b"
+  },
+  "1088886518": {
+   "split": "test",
+   "signals": [
+    "parks_open_space",
+    "quiet_street",
+    "waterfront"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "5b383e3c5ab68681cd96d9eeca636f375e77900f"
+  },
+  "1155896349": {
+   "split": "test",
+   "signals": [],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "8803695a13854e90031bf399154ed3d8ba9a93aa"
+  },
+  "1190067566": {
+   "split": "test",
+   "signals": [
+    "near_downtown",
+    "near_shopping_dining",
+    "public_transit",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "59d7e4867e43ab32ebf18307aedf9946e23fefea"
+  },
+  "1140221420": {
+   "split": "dev",
+   "signals": [
+    "quiet_street",
+    "renovated_updated",
+    "views",
+    "waterfront"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "11cb95e5d44ec066a84155a33238daa8a6687ed1"
+  },
+  "1185036265": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "near_downtown",
+    "near_shopping_dining",
+    "public_transit",
+    "renovated_updated",
+    "views",
+    "walkable"
+   ],
+   "hoa": "low",
+   "mello_roos": null,
+   "text_sha1": "948cfb631d83988db5727f26ca3df1bfb7a0666e"
+  },
+  "1181423539": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "near_shopping_dining",
+    "new_components",
+    "quiet_street",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "94ecc9b53a790d09e781749c4a27c2ce2e179734"
+  },
+  "1187653336": {
+   "split": "dev",
+   "signals": [
+    "new_components",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "5de89a1a79203c0599e7436d2047b667606bd6f0"
+  },
+  "1104957883": {
+   "split": "test",
+   "signals": [
+    "golf_course",
+    "near_shopping_dining",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "99d7fff8d9b679c7044bb293a2ad773cc8f95b05"
+  },
+  "1190744007": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "move_in_ready",
+    "near_shopping_dining",
+    "new_components",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "c28c7cc984bf03f613a8008a125a2ded5f45e351"
+  },
+  "1176764811": {
+   "split": "dev",
+   "signals": [
+    "near_downtown",
+    "near_shopping_dining",
+    "public_transit",
+    "renovated_updated",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d06d9c126bbcb5e4505eea95ad413f8ef76d3547"
+  },
+  "1178717543": {
+   "split": "dev",
+   "signals": [
+    "move_in_ready",
+    "near_schools",
+    "new_components",
+    "parks_open_space",
+    "quiet_street",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "2c44ec0640a16c0ae732b10e8041adb74d51bf6b"
+  },
+  "1175731058": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "near_shopping_dining",
+    "renovated_updated",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "48f014e567a4803f89a05de240050baa8420f320"
+  },
+  "1188344502": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "gated_community",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "20b9d05b90f3ba214a0fd1f0502771bbe8ca5694"
+  },
+  "1177547911": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "new_components",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "f5f5d69667788a8fcb8058cd81b523bf6edfecb4"
+  },
+  "1179141738": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "near_downtown",
+    "near_shopping_dining",
+    "parks_open_space",
+    "renovated_updated",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "ac620b5de89d7f9f6448e76264e6b14908ed51e7"
+  },
+  "1190555552": {
+   "split": "dev",
+   "signals": [
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "bb0d8a4ceca2822e107a58f95ef15540a8338310"
+  },
+  "1190742782": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "0d0d06453d4714c842572d1b39e557a5dd87316f"
+  },
+  "1155373838": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "near_beach_water",
+    "near_shopping_dining",
+    "quiet_street",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "1c0f8480158f830698974d28155b72daaa6e03f3"
+  },
+  "1177725890": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "golf_course",
+    "near_shopping_dining",
+    "new_components",
+    "quiet_street",
+    "renovated_updated",
+    "senior_55plus",
+    "well_maintained"
+   ],
+   "hoa": "present",
+   "mello_roos": null,
+   "text_sha1": "b6604ba18609a2b3077282e484484269487961e7"
+  },
+  "1158737308": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "seller_financing"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "da7789a041a5a13f1e6e6ebecfa0aa05bd4904d8"
+  },
+  "1169573972": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "61c5a2335ac8c4667dd818713202b78b95fb32c0"
+  },
+  "1132374130": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_downtown",
+    "parks_open_space",
+    "quiet_street",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "3fdbd53a5eb046e337e2a266a2f6529ebfec62f3"
+  },
+  "1021209766": {
+   "split": "dev",
+   "signals": [
+    "golf_course",
+    "motivated_seller",
+    "move_in_ready",
+    "near_beach_water",
+    "renovated_updated",
+    "seller_financing"
+   ],
+   "hoa": "present",
+   "mello_roos": null,
+   "text_sha1": "e9be065d43f57af497f45396e1c3b4771fd79e6e"
+  },
+  "1178798231": {
+   "split": "dev",
+   "signals": [
+    "near_schools",
+    "new_components"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "cc180ea35b57afd5089dfad9600396830fcc5419"
+  },
+  "1189607826": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "new_components",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "745edcb0d7b207243403b7191da90b3c4466724c"
+  },
+  "1183028359": {
+   "split": "dev",
+   "signals": [
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "6c01c668db9b355c8bd450cb0f9972e39dbb000d"
+  },
+  "1149848468": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "move_in_ready"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "97a83163c9c6a3aac8281695ac54de386fcb5699"
+  },
+  "1157403345": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "motivated_seller",
+    "move_in_ready",
+    "near_downtown",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "public_transit",
+    "quiet_street",
+    "va",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "12f1a26ae357dc48edc0370946faaf4cdd1ac57d"
+  },
+  "1154927754": {
+   "split": "test",
+   "signals": [
+    "investment_income",
+    "quiet_street",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e34a29bc6ff7068fb5a319edfc4e6e1b0a3b0be8"
+  },
+  "1178514572": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "golf_course",
+    "near_beach_water",
+    "near_schools",
+    "new_components",
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "7811a6dd083b110556e8642530bc451009ad3796"
+  },
+  "1176691904": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "near_shopping_dining",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "c91c77715b3aa896654d555c2258dcb3b90098fb"
+  },
+  "1159232835": {
+   "split": "dev",
+   "signals": [
+    "golf_course",
+    "near_beach_water",
+    "near_shopping_dining",
+    "senior_55plus"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "efe21e7137dea09be7868835c6087c58448400f5"
+  },
+  "1146057892": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "move_in_ready",
+    "new_construction",
+    "parks_open_space",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e34821718de0d86bb6e291d599efc2362556076f"
+  },
+  "1180480810": {
+   "split": "test",
+   "signals": [
+    "renovated_updated",
+    "views",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "2fba5a502fd27f9927f501b5668e9112216fc4dd"
+  },
+  "1180058323": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "near_beach_water",
+    "near_shopping_dining",
+    "new_components",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e86dcb541f390f6e3d6c79105aaebbb470a6d702"
+  },
+  "1183751742": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_downtown",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e1105b267bd52db2fee89feb610d73a34d3df26d"
+  },
+  "1190422757": {
+   "split": "dev",
+   "signals": [
+    "near_shopping_dining",
+    "new_construction"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "80a060359f3dfe024ccb8162804bc989be976d5f"
+  },
+  "1176181474": {
+   "split": "dev",
+   "signals": [
+    "golf_course",
+    "near_beach_water",
+    "near_shopping_dining",
+    "senior_55plus"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "46dac1ab93dde7777e627bd3e4ae243e6a47e966"
+  },
+  "1175989448": {
+   "split": "test",
+   "signals": [
+    "near_schools",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated",
+    "views",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "09be5a53899fc7cbb9486a309fcbf675a9e397ad"
+  },
+  "1061959902": {
+   "split": "test",
+   "signals": [],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "70e61ff78467bd74291b71406fd453a5741bbf59"
+  },
+  "1183465908": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "gated_community",
+    "near_beach_water",
+    "near_schools",
+    "parks_open_space",
+    "renovated_updated",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "926e3be9c5df34a0013aa68bc8d7e33383bd9952"
+  },
+  "1155389611": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "needs_work",
+    "parks_open_space",
+    "quiet_street",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e3efac7fbbb77e779e25514d95160f33d3db9088"
+  },
+  "1190432045": {
+   "split": "dev",
+   "signals": [
+    "motivated_seller",
+    "needs_work",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "cc5fa757e9e76defbb85301ac28dbbf97f2144b5"
+  },
+  "1157406073": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_schools",
+    "parks_open_space",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "f93a575aecd404e683697221a33b7dd4001db67e"
+  },
+  "1191039288": {
+   "split": "dev",
+   "signals": [
+    "near_shopping_dining"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "18cb9a2a99825ccdf3b7716d8dedb77f3d7cea6b"
+  },
+  "1177248412": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_shopping_dining",
+    "parks_open_space",
+    "quiet_street",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "cde25a225bd799161dbd23d1fd731bda4c25f7c5"
+  },
+  "1190440921": {
+   "split": "dev",
+   "signals": [],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "8e9b09963673bfb68d6e4d5ba73142f03e0e2b30"
+  },
+  "1189757454": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "investment_income",
+    "motivated_seller",
+    "move_in_ready",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "592fc5233edc902ed847bfcf5094b4539d987c8c"
+  },
+  "1168459259": {
+   "split": "dev",
+   "signals": [
+    "near_beach_water",
+    "quiet_street",
+    "views",
+    "walkable",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "f19a430ee5a344a977e525317456858385b8baa6"
+  },
+  "1156788616": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "move_in_ready",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "94a865557ede1f297c08a42963b1612f91af986a"
+  },
+  "1159481174": {
+   "split": "test",
+   "signals": [
+    "new_components",
+    "quiet_street",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "545b0c4259116122299b3dea36337bb149d84d03"
+  },
+  "1174418958": {
+   "split": "test",
+   "signals": [
+    "golf_course",
+    "near_beach_water"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "2aab3f76d8e082dd20f9c4699a44988f10e7a4be"
+  },
+  "1184616478": {
+   "split": "test",
+   "signals": [
+    "fha",
+    "freeway_commute",
+    "move_in_ready",
+    "near_beach_water",
+    "near_shopping_dining",
+    "renovated_updated"
+   ],
+   "hoa": "low",
+   "mello_roos": null,
+   "text_sha1": "41fbfa6a28ef321ff791b0092600aad0108adfc6"
+  },
+  "1190522458": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_schools",
+    "near_shopping_dining",
+    "renovated_updated",
+    "views",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "9379fc840c82ce753a3df312ed27ccd8184b3c21"
+  },
+  "1176608634": {
+   "split": "dev",
+   "signals": [
+    "new_construction",
+    "seller_credit"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "cf032ec635ef538bbe861dd91ca23a394d00f120"
+  },
+  "1159911018": {
+   "split": "test",
+   "signals": [
+    "near_shopping_dining",
+    "renovated_updated",
+    "senior_55plus",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "25a62569e0922642c0595828069847bb2b940ac2"
+  },
+  "1179265685": {
+   "split": "test",
+   "signals": [
+    "near_shopping_dining",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "8b54244e0e952d947222f97e5d48e5595173c942"
+  },
+  "1178545907": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_schools",
+    "near_shopping_dining",
+    "needs_work",
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "856a0c17ae62eda1a4c0ec70e728c0d990b6b103"
+  },
+  "1190887256": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "new_components",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "72f77c3b007e896a489384ab133cf8f5bd9e9e16"
+  },
+  "1176236712": {
+   "split": "dev",
+   "signals": [
+    "investment_income"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e7647cd4f8d8cd4aaa706b05fb20f67cd02a065b"
+  },
+  "1176783053": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "near_beach_water",
+    "senior_55plus"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "9f19d383ca342b8ad0852bf0820df8b249b5ac49"
+  },
+  "1169346890": {
+   "split": "dev",
+   "signals": [
+    "near_beach_water",
+    "near_shopping_dining",
+    "quiet_street",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "36fc8f0cde4ef4cdd3d2b6db087a487457b664d7"
+  },
+  "1168525825": {
+   "split": "dev",
+   "signals": [
+    "investment_income",
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d162866f8696c96542f340ea0bed329dacf92f94"
+  },
+  "1183767918": {
+   "split": "test",
+   "signals": [
+    "gated_community"
+   ],
+   "hoa": "none",
+   "mello_roos": null,
+   "text_sha1": "b98c9750890818acf0cc61297a436f985d619a5d"
+  },
+  "1190655729": {
+   "split": "dev",
+   "signals": [
+    "near_beach_water",
+    "new_components",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "70a4c2154530a27c4006cc48b18d431d895e9ed8"
+  },
+  "1155692861": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "golf_course",
+    "investment_income",
+    "near_shopping_dining",
+    "quiet_street",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "fcc4015941b4e2602c494f5c290e56840de4d695"
+  },
+  "1157101331": {
+   "split": "dev",
+   "signals": [
+    "assumable_loan",
+    "freeway_commute",
+    "gated_community",
+    "move_in_ready",
+    "near_beach_water",
+    "near_shopping_dining",
+    "new_components",
+    "renovated_updated",
+    "va"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "4e54b95296a496db76aebd552a0376cddc34fc2c"
+  },
+  "1185219551": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "c9838b22161a17caff99ad8889d06c5fa5b7145a"
+  },
+  "1190488266": {
+   "split": "dev",
+   "signals": [
+    "gated_community"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "9dde04d111486eea9906d006b2c1f779c98cc976"
+  },
+  "1179122585": {
+   "split": "dev",
+   "signals": [
+    "assumable_loan",
+    "move_in_ready",
+    "new_components",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "c5370816f756e677583d6f671d3545943b1879df"
+  },
+  "1176984437": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "a7cfc5962fe12a74700caec81d23b36f24fddf1e"
+  },
+  "1176858906": {
+   "split": "dev",
+   "signals": [
+    "new_construction"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "f6b063c31190c4d14760c274064597f268a140f1"
+  },
+  "1177430409": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "public_transit",
+    "quiet_street"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "7647f4b9acdeb0cf0b6a63f457df711f21fe725a"
+  },
+  "1190971415": {
+   "split": "test",
+   "signals": [
+    "investment_income",
+    "near_beach_water",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d651f36e9a8b8363df6c2b10095f74b7fe43b5f0"
+  },
+  "1175560892": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "investment_income",
+    "move_in_ready",
+    "near_downtown",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": "none",
+   "mello_roos": null,
+   "text_sha1": "637c51ef0d8f3f8866370dba621c64e3aa3ff4bc"
+  },
+  "1179209060": {
+   "split": "test",
+   "signals": [
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "7f89034729a568678405c186bda290bbbba3a3fc"
+  },
+  "1190881500": {
+   "split": "test",
+   "signals": [
+    "near_shopping_dining",
+    "new_components",
+    "renovated_updated",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "f9240fd8af7f7f2f2126bfee9b971d2cd31aa266"
+  },
+  "1179232033": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "investment_income",
+    "motivated_seller",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "83d6f48e631212ff241db4d0e1e59d8d06987222"
+  },
+  "1158278730": {
+   "split": "test",
+   "signals": [
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "948dbdb6cf22944908776d41ac00e7c3cc0f5f52"
+  },
+  "1183740911": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "move_in_ready",
+    "near_schools",
+    "new_components",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "33f79e63d6104ac4824fbc7fc18c8380f584e244"
+  },
+  "1190562534": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "near_beach_water",
+    "new_construction",
+    "senior_55plus"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "7420143de2235a8d6673a5544931caa82da00023"
+  },
+  "1189478050": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space",
+    "quiet_street",
+    "well_maintained"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d7599b2c396e77e06513930454a51c934e4a5324"
+  },
+  "1176798032": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "258c6bf802d3a4e54b07f7ca6387e9f188b53305"
+  },
+  "1170381547": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "new_components",
+    "renovated_updated",
+    "views",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "2f863bea3b551d118eb8a291cb69384c15a2a4e9"
+  },
+  "1156631973": {
+   "split": "test",
+   "signals": [
+    "near_beach_water",
+    "quiet_street",
+    "renovated_updated",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "c48925b3ffe918cc10749eb77495eb67fb5be574"
+  },
+  "1189501336": {
+   "split": "dev",
+   "signals": [
+    "freeway_commute",
+    "near_schools",
+    "near_shopping_dining",
+    "parks_open_space"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "0f069dad48c6ff54e1d8ab59d3bc917c71e56a22"
+  },
+  "1189505477": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "near_downtown",
+    "near_shopping_dining",
+    "public_transit",
+    "renovated_updated",
+    "walkable"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "819c5863564451d4b568620729b8f1c261131fc8"
+  },
+  "1177661041": {
+   "split": "dev",
+   "signals": [
+    "motivated_seller",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "326da4151cc00b9e1b84f62d177f5ef9c2b554ce"
+  },
+  "1175378241": {
+   "split": "test",
+   "signals": [
+    "gated_community",
+    "golf_course",
+    "move_in_ready",
+    "near_beach_water",
+    "near_downtown",
+    "new_construction",
+    "parks_open_space",
+    "quiet_street",
+    "seller_credit",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "4fbaa9709149de9124707f897e02645f6158a06d"
+  },
+  "1185673499": {
+   "split": "test",
+   "signals": [
+    "move_in_ready",
+    "new_components",
+    "well_maintained"
+   ],
+   "hoa": "low",
+   "mello_roos": null,
+   "text_sha1": "819e26d8745ce05a370c1fbc3a29bf270338c7e2"
+  },
+  "1139655394": {
+   "split": "dev",
+   "signals": [
+    "fha",
+    "seller_financing",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "d46cc0328b3571aba478a6ef50fa6facb8781240"
+  },
+  "1184955029": {
+   "split": "dev",
+   "signals": [
+    "gated_community",
+    "near_beach_water",
+    "new_components",
+    "renovated_updated",
+    "views"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "e0d4035880525934718d173a4ddbb40431852967"
+  },
+  "1190838724": {
+   "split": "test",
+   "signals": [
+    "freeway_commute",
+    "near_beach_water",
+    "near_schools",
+    "near_shopping_dining",
+    "new_components",
+    "parks_open_space",
+    "renovated_updated",
+    "views",
+    "waterfront"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "1cb775f2af949940f1795a1d27db0d5cb10cf6e7"
+  },
+  "1178351714": {
+   "split": "dev",
+   "signals": [
+    "new_construction"
+   ],
+   "hoa": null,
+   "mello_roos": null,
+   "text_sha1": "b8e26694535c329cd1b95d5baf1ba1029ed3fe03"
+  }
+ }
+}
