@@ -1,0 +1,3813 @@
+{
+ "version": 1,
+ "notes": {
+  "what": "337 invented real-estate search queries with a language-based intent label (browsing / researching / high_intent_inquiry). 60 come from Week 1 (source=week1), 277 were written for Week 7 (source=week7).",
+  "guidelines": "docs/intent_guidelines.md (written before the Week 7 queries were labeled).",
+  "annotator": "single annotator (the AI assistant that also wrote the classifier). A blind relabel of 80 queries agreed 80/80, which shows the rules are applied consistently by one labeler, not that another person would agree.",
+  "splits": "near-duplicate groups (same wording apart from city and numbers) stay in one split; seed 707. train 55% / dev 20% / test 25% per label.",
+  "not_real_traffic": "queries are invented, not collected from users. No MLS data, so this file can be committed.",
+  "added_after_first_dev_run": "43 extra training-only queries (source=week7_added) written after the first dev run to cover thin phrasing styles (short keyword-style high-intent queries, short topic queries). Any candidate within 0.6 token overlap of a dev or test query was dropped. Dev and test were not changed."
+ },
+ "queries": [
+  {
+   "id": "q000",
+   "query": "condos Santa Monica",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 0
+  },
+  {
+   "id": "q001",
+   "query": "Fresno houses",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 1
+  },
+  {
+   "id": "q002",
+   "query": "homes Sacramento",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 2
+  },
+  {
+   "id": "q003",
+   "query": "townhomes Anaheim",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 3
+  },
+  {
+   "id": "q004",
+   "query": "pool homes Temecula",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 4
+  },
+  {
+   "id": "q005",
+   "query": "single story Bakersfield",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 5
+  },
+  {
+   "id": "q006",
+   "query": "beach houses Huntington Beach",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 6
+  },
+  {
+   "id": "q007",
+   "query": "Napa vineyard homes",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 7
+  },
+  {
+   "id": "q008",
+   "query": "cabins Lake Arrowhead",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 8
+  },
+  {
+   "id": "q009",
+   "query": "duplex Oakland",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 9
+  },
+  {
+   "id": "q010",
+   "query": "lofts downtown Los Angeles",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 10
+  },
+  {
+   "id": "q011",
+   "query": "ranch homes Modesto",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 11
+  },
+  {
+   "id": "q012",
+   "query": "new homes Fontana",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 12
+  },
+  {
+   "id": "q013",
+   "query": "mid century modern Palm Springs",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 13
+  },
+  {
+   "id": "q014",
+   "query": "guest house Ojai",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 14
+  },
+  {
+   "id": "q015",
+   "query": "homes with a view Laguna Beach",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 15
+  },
+  {
+   "id": "q016",
+   "query": "golf course homes La Quinta",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 16
+  },
+  {
+   "id": "q017",
+   "query": "waterfront homes Newport Beach",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 17
+  },
+  {
+   "id": "q018",
+   "query": "equestrian properties Murrieta",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 18
+  },
+  {
+   "id": "q019",
+   "query": "tiny homes Santa Cruz",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 19
+  },
+  {
+   "id": "q020",
+   "query": "show me houses in Santa Clarita",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 20
+  },
+  {
+   "id": "q021",
+   "query": "I'd like to see homes in Carlsbad",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 21
+  },
+  {
+   "id": "q022",
+   "query": "what homes are for sale in Santa Barbara",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 22
+  },
+  {
+   "id": "q023",
+   "query": "looking at condos in Mountain View",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 23
+  },
+  {
+   "id": "q024",
+   "query": "show me townhouses near the beach in Redondo Beach",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 24
+  },
+  {
+   "id": "q025",
+   "query": "browse luxury homes in Malibu",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 25
+  },
+  {
+   "id": "q026",
+   "query": "homes for sale in Pleasanton",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 26
+  },
+  {
+   "id": "q027",
+   "query": "houses with big backyards in Chino Hills",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 27
+  },
+  {
+   "id": "q028",
+   "query": "show me Craftsman homes in Pasadena",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 28
+  },
+  {
+   "id": "q029",
+   "query": "Victorian houses in San Francisco",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 29
+  },
+  {
+   "id": "q030",
+   "query": "homes with a pool and a spa in Yorba Linda",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 30
+  },
+  {
+   "id": "q031",
+   "query": "Spanish style homes in Santa Barbara",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 31
+  },
+  {
+   "id": "q032",
+   "query": "farmhouses near Petaluma",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 32
+  },
+  {
+   "id": "q033",
+   "query": "houses with a guest house in Ojai",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 14
+  },
+  {
+   "id": "q034",
+   "query": "homes with mountain views in Thousand Oaks",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 33
+  },
+  {
+   "id": "q035",
+   "query": "show me what's in Walnut Creek",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 34
+  },
+  {
+   "id": "q036",
+   "query": "ocean view condos in San Diego",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 35
+  },
+  {
+   "id": "q037",
+   "query": "homes with solar panels in Fresno",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 36
+  },
+  {
+   "id": "q038",
+   "query": "four bedroom houses in Elk Grove",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 37
+  },
+  {
+   "id": "q039",
+   "query": "houses with a 3 car garage in Clovis",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 38
+  },
+  {
+   "id": "q040",
+   "query": "lakefront homes in Lake Elsinore",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 39
+  },
+  {
+   "id": "q041",
+   "query": "starter homes in Stockton",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 40
+  },
+  {
+   "id": "q042",
+   "query": "a nice house in Sonoma",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 41
+  },
+  {
+   "id": "q043",
+   "query": "homes close to downtown Napa",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 42
+  },
+  {
+   "id": "q044",
+   "query": "single story homes with a pool in Rancho Cucamonga",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 43
+  },
+  {
+   "id": "q045",
+   "query": "modern condos in downtown San Diego",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 44
+  },
+  {
+   "id": "q046",
+   "query": "cottages in Carmel",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 45
+  },
+  {
+   "id": "q047",
+   "query": "big lots in Fallbrook",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 46
+  },
+  {
+   "id": "q048",
+   "query": "homes with a fireplace in Big Bear",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 47
+  },
+  {
+   "id": "q049",
+   "query": "townhouses in Irvine with a garage",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 48
+  },
+  {
+   "id": "q050",
+   "query": "beach condos in Oceanside",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 49
+  },
+  {
+   "id": "q051",
+   "query": "homes in a gated community in Calabasas",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 50
+  },
+  {
+   "id": "q052",
+   "query": "horse property in Norco",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 51
+  },
+  {
+   "id": "q053",
+   "query": "luxury condos in West Hollywood",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 52
+  },
+  {
+   "id": "q054",
+   "query": "houses with RV parking in Lancaster",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 53
+  },
+  {
+   "id": "q055",
+   "query": "bungalows in Long Beach",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 54
+  },
+  {
+   "id": "q056",
+   "query": "1920s homes in Berkeley",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 55
+  },
+  {
+   "id": "q057",
+   "query": "log cabins in Idyllwild",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 56
+  },
+  {
+   "id": "q058",
+   "query": "homes by the golf course in Palm Desert",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 57
+  },
+  {
+   "id": "q059",
+   "query": "show me homes in San Diego",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 58
+  },
+  {
+   "id": "q060",
+   "query": "homes with pools in Irvine",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 59
+  },
+  {
+   "id": "q061",
+   "query": "luxury homes in Beverly Hills",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 60
+  },
+  {
+   "id": "q062",
+   "query": "what's for sale in Oxnard",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 61
+  },
+  {
+   "id": "q063",
+   "query": "2 story homes in Riverside",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 62
+  },
+  {
+   "id": "q064",
+   "query": "three bedroom houses in Tustin",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 63
+  },
+  {
+   "id": "q065",
+   "query": "homes with a big kitchen in Orange",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 64
+  },
+  {
+   "id": "q066",
+   "query": "houses with a home office in Santa Rosa",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 65
+  },
+  {
+   "id": "q067",
+   "query": "I'm just starting to look around and want to see what kind of homes are out there in Santa Rosa",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 66
+  },
+  {
+   "id": "q068",
+   "query": "looking for a nice family home with a big yard and maybe a pool somewhere in the Temecula area",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 67
+  },
+  {
+   "id": "q069",
+   "query": "show me some modern homes with lots of natural light and an open floor plan in San Diego",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 68
+  },
+  {
+   "id": "q070",
+   "query": "I'd love to see some beautiful old homes with character and original woodwork in Pasadena",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 69
+  },
+  {
+   "id": "q071",
+   "query": "want to see all the beach houses with ocean views in Laguna Beach",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 70
+  },
+  {
+   "id": "q072",
+   "query": "browsing for a mountain cabin with a fireplace and a deck near Lake Tahoe",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 71
+  },
+  {
+   "id": "q073",
+   "query": "I like the look of homes with big porches and mature trees in Sacramento, what do you have",
+   "intent": "browsing",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 72
+  },
+  {
+   "id": "q074",
+   "query": "hmes in irvine",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 73
+  },
+  {
+   "id": "q075",
+   "query": "houes for sale in sacremento",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 74
+  },
+  {
+   "id": "q076",
+   "query": "2 story homes riverside",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 75
+  },
+  {
+   "id": "q077",
+   "query": "3br homes escondido",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 76
+  },
+  {
+   "id": "q078",
+   "query": "pool hs san jose",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 77
+  },
+  {
+   "id": "q079",
+   "query": "condoz in glendale",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 78
+  },
+  {
+   "id": "q080",
+   "query": "huntington beach homes ocean veiw",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 79
+  },
+  {
+   "id": "q081",
+   "query": "lux homes bev hills",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 80
+  },
+  {
+   "id": "q082",
+   "query": "homes near the beach",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 81
+  },
+  {
+   "id": "q083",
+   "query": "houses",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 82
+  },
+  {
+   "id": "q084",
+   "query": "homes w/ a pool in Chula Vista",
+   "intent": "browsing",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 83
+  },
+  {
+   "id": "q085",
+   "query": "homes in Irvine under 900k",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 84
+  },
+  {
+   "id": "q086",
+   "query": "houses in Bakersfield under 500k",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 84
+  },
+  {
+   "id": "q087",
+   "query": "2 bed 2 bath condos in Santa Monica",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 85
+  },
+  {
+   "id": "q088",
+   "query": "luxury homes in Beverly Hills over 5 million",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 86
+  },
+  {
+   "id": "q089",
+   "query": "cheap condos in Anaheim",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "dev",
+   "group": 87
+  },
+  {
+   "id": "q090",
+   "query": "affordable homes in Fresno",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 88
+  },
+  {
+   "id": "q091",
+   "query": "3 bedroom 2 bath homes in Corona",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "test",
+   "group": 89
+  },
+  {
+   "id": "q092",
+   "query": "Torrance 4 bed 3 bath",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 90
+  },
+  {
+   "id": "q093",
+   "query": "big houses in Burbank with a pool",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 91
+  },
+  {
+   "id": "q094",
+   "query": "what is the average HOA fee for condos in Irvine",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 92
+  },
+  {
+   "id": "q095",
+   "query": "which neighborhoods in San Diego have the best schools",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 93
+  },
+  {
+   "id": "q096",
+   "query": "is it a good time to buy in Sacramento",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 94
+  },
+  {
+   "id": "q097",
+   "query": "how much are property taxes in Orange County",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 95
+  },
+  {
+   "id": "q098",
+   "query": "what's the difference between a condo and a townhouse",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 96
+  },
+  {
+   "id": "q099",
+   "query": "how much does it cost to build an ADU in Los Angeles",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 97
+  },
+  {
+   "id": "q100",
+   "query": "is Pasadena safe for families",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 98
+  },
+  {
+   "id": "q101",
+   "query": "what are the pros and cons of living in Temecula",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 99
+  },
+  {
+   "id": "q102",
+   "query": "how long is the commute from Murrieta to San Diego",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 100
+  },
+  {
+   "id": "q103",
+   "query": "does Fresno have a lot of flooding",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 101
+  },
+  {
+   "id": "q104",
+   "query": "what are Mello-Roos taxes and which Irvine neighborhoods have them",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 102
+  },
+  {
+   "id": "q105",
+   "query": "how do I find homes with low property taxes in California",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 103
+  },
+  {
+   "id": "q106",
+   "query": "is it cheaper to rent or buy in Oakland",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 104
+  },
+  {
+   "id": "q107",
+   "query": "what is the median home price in Santa Monica",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 105
+  },
+  {
+   "id": "q108",
+   "query": "how much is homeowners insurance in wildfire areas near Malibu",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 106
+  },
+  {
+   "id": "q109",
+   "query": "what are closing costs for a house in San Jose",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 107
+  },
+  {
+   "id": "q110",
+   "query": "do homes in Davis hold their value",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 108
+  },
+  {
+   "id": "q111",
+   "query": "can I afford a 900k house on a 150k income",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 109
+  },
+  {
+   "id": "q112",
+   "query": "what school district is Cupertino in",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 110
+  },
+  {
+   "id": "q113",
+   "query": "which Bay Area suburbs are the most walkable",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 111
+  },
+  {
+   "id": "q114",
+   "query": "how much has Irvine home value grown in five years",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 112
+  },
+  {
+   "id": "q115",
+   "query": "what is an HOA special assessment and how common is it in condos",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 113
+  },
+  {
+   "id": "q116",
+   "query": "are there flood zones in Sacramento neighborhoods",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 114
+  },
+  {
+   "id": "q117",
+   "query": "what does a typical 3 bedroom cost in Riverside",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 115
+  },
+  {
+   "id": "q118",
+   "query": "how does Mello-Roos affect a monthly payment",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 116
+  },
+  {
+   "id": "q119",
+   "query": "what is an FHA loan and who qualifies",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 117
+  },
+  {
+   "id": "q120",
+   "query": "is solar usually owned or leased on homes in Fresno",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 118
+  },
+  {
+   "id": "q121",
+   "query": "how much does a pool add to home value in Palm Springs",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 119
+  },
+  {
+   "id": "q122",
+   "query": "compare Carlsbad and Encinitas for families",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 120
+  },
+  {
+   "id": "q123",
+   "query": "Irvine vs Tustin schools and prices",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 121
+  },
+  {
+   "id": "q124",
+   "query": "areas in Los Angeles with low crime",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 122
+  },
+  {
+   "id": "q125",
+   "query": "condos near UC Irvine with low HOA",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 123
+  },
+  {
+   "id": "q126",
+   "query": "areas in San Diego with low property taxes",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 124
+  },
+  {
+   "id": "q127",
+   "query": "neighborhoods in Sacramento with good public transit",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 125
+  },
+  {
+   "id": "q128",
+   "query": "cities near San Francisco with top rated schools",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 126
+  },
+  {
+   "id": "q129",
+   "query": "best neighborhoods for young professionals in Los Angeles",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 127
+  },
+  {
+   "id": "q130",
+   "query": "low HOA communities near Temecula",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 128
+  },
+  {
+   "id": "q131",
+   "query": "average home price by neighborhood in San Diego",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 129
+  },
+  {
+   "id": "q132",
+   "query": "property tax rate in Alameda County",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 130
+  },
+  {
+   "id": "q133",
+   "query": "HOA fees for townhomes in Long Beach",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 131
+  },
+  {
+   "id": "q134",
+   "query": "neighborhood guide Pasadena",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 132
+  },
+  {
+   "id": "q135",
+   "query": "retirement communities in California with low HOA",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 133
+  },
+  {
+   "id": "q136",
+   "query": "Mello-Roos by community in Rancho Cucamonga",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 134
+  },
+  {
+   "id": "q137",
+   "query": "condo vs single family in Santa Clara",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 135
+  },
+  {
+   "id": "q138",
+   "query": "walkable neighborhoods in San Diego with restaurants",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 136
+  },
+  {
+   "id": "q139",
+   "query": "quiet suburbs near Sacramento with low taxes",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 137
+  },
+  {
+   "id": "q140",
+   "query": "school ratings in Walnut Creek neighborhoods",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 138
+  },
+  {
+   "id": "q141",
+   "query": "rental yields in Fresno vs Bakersfield",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 139
+  },
+  {
+   "id": "q142",
+   "query": "which cities allow short term rentals near Joshua Tree",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 140
+  },
+  {
+   "id": "q143",
+   "query": "safest neighborhoods in Long Beach",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 141
+  },
+  {
+   "id": "q144",
+   "query": "price per square foot trends in Berkeley",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 142
+  },
+  {
+   "id": "q145",
+   "query": "cost of living in Irvine compared to Anaheim",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 143
+  },
+  {
+   "id": "q146",
+   "query": "typical HOA for gated communities in Palm Desert",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 144
+  },
+  {
+   "id": "q147",
+   "query": "neighborhoods near Google in Mountain View with a short commute",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 145
+  },
+  {
+   "id": "q148",
+   "query": "best places to live near LAX with good schools",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 146
+  },
+  {
+   "id": "q149",
+   "query": "flood risk near the river in Sacramento",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 147
+  },
+  {
+   "id": "q150",
+   "query": "wildfire risk zones near Santa Rosa",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 148
+  },
+  {
+   "id": "q151",
+   "query": "earthquake insurance cost in Los Angeles",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 149
+  },
+  {
+   "id": "q152",
+   "query": "first time homebuyer programs in San Diego County",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 150
+  },
+  {
+   "id": "q153",
+   "query": "ADU rules in Pasadena",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 151
+  },
+  {
+   "id": "q154",
+   "query": "are manufactured homes cheaper in Hemet",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 152
+  },
+  {
+   "id": "q155",
+   "query": "best suburbs of San Jose for families",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 153
+  },
+  {
+   "id": "q156",
+   "query": "pros and cons of buying a condo in Santa Monica",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 154
+  },
+  {
+   "id": "q157",
+   "query": "how property tax reassessment works after buying in Los Angeles",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 155
+  },
+  {
+   "id": "q158",
+   "query": "crime rates in Oakland neighborhoods",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 156
+  },
+  {
+   "id": "q159",
+   "query": "will home prices drop in Sacramento next year",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 157
+  },
+  {
+   "id": "q160",
+   "query": "I'm trying to figure out which Orange County cities have the best schools and reasonable property taxes before I decide where to look",
+   "intent": "researching",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 158
+  },
+  {
+   "id": "q161",
+   "query": "I want to understand how HOA fees work in condos near the beach in San Diego and what they usually cover",
+   "intent": "researching",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 159
+  },
+  {
+   "id": "q162",
+   "query": "we are comparing Temecula and Murrieta for commute times, school quality, and taxes",
+   "intent": "researching",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 160
+  },
+  {
+   "id": "q163",
+   "query": "does it make sense to buy in Sacramento or stay in the Bay Area given prices and job markets",
+   "intent": "researching",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 161
+  },
+  {
+   "id": "q164",
+   "query": "what should I know about buying a house near a fault line in Hayward",
+   "intent": "researching",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 162
+  },
+  {
+   "id": "q165",
+   "query": "which parts of Riverside are good for a family that wants lower taxes, newer construction, and a short drive to the 91",
+   "intent": "researching",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 163
+  },
+  {
+   "id": "q166",
+   "query": "avg hoa irvine condos",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 164
+  },
+  {
+   "id": "q167",
+   "query": "mello roos which areas",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 165
+  },
+  {
+   "id": "q168",
+   "query": "best schools near san jose?",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 166
+  },
+  {
+   "id": "q169",
+   "query": "pros cons of buying in Oakland",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 154
+  },
+  {
+   "id": "q170",
+   "query": "low tax areas riverside county",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 167
+  },
+  {
+   "id": "q171",
+   "query": "is solar leased or owned usually",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 118
+  },
+  {
+   "id": "q172",
+   "query": "wat is the avrage price of a house in san diego",
+   "intent": "researching",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 168
+  },
+  {
+   "id": "q173",
+   "query": "homes in Irvine with low HOA",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 169
+  },
+  {
+   "id": "q174",
+   "query": "condos with low HOA in Long Beach",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 170
+  },
+  {
+   "id": "q175",
+   "query": "homes in good school districts in San Jose",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "dev",
+   "group": 171
+  },
+  {
+   "id": "q176",
+   "query": "quiet neighborhoods in Pasadena",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "dev",
+   "group": 172
+  },
+  {
+   "id": "q177",
+   "query": "homes with no HOA in Temecula",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "test",
+   "group": 173
+  },
+  {
+   "id": "q178",
+   "query": "new construction in Irvine with Mello-Roos",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "test",
+   "group": 174
+  },
+  {
+   "id": "q179",
+   "query": "3 bedroom homes in Irvine and what they cost",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 175
+  },
+  {
+   "id": "q180",
+   "query": "homes in low crime areas of Sacramento",
+   "intent": "researching",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "test",
+   "group": 122
+  },
+  {
+   "id": "q181",
+   "query": "how much should I budget for maintenance on an older house in Pasadena",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 176
+  },
+  {
+   "id": "q182",
+   "query": "which neighborhoods in Irvine have the lowest HOA and Mello-Roos combined",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 177
+  },
+  {
+   "id": "q183",
+   "query": "walkable areas of Long Beach with good restaurants and transit",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 178
+  },
+  {
+   "id": "q184",
+   "query": "how do school districts affect home prices in San Diego",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 179
+  },
+  {
+   "id": "q185",
+   "query": "Los Angeles neighborhoods ranked by commute time to downtown",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 180
+  },
+  {
+   "id": "q186",
+   "query": "is Palm Springs a good place to buy a vacation rental",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 181
+  },
+  {
+   "id": "q187",
+   "query": "open houses Irvine this weekend",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 182
+  },
+  {
+   "id": "q188",
+   "query": "3br 2ba Riverside under 600k",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 183
+  },
+  {
+   "id": "q189",
+   "query": "just listed Carlsbad",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 184
+  },
+  {
+   "id": "q190",
+   "query": "new listings San Diego today",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 185
+  },
+  {
+   "id": "q191",
+   "query": "price reduced condos Anaheim",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 186
+  },
+  {
+   "id": "q192",
+   "query": "4 bed Murrieta pool under 850k",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 187
+  },
+  {
+   "id": "q193",
+   "query": "move in ready Sacramento 500k max",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 188
+  },
+  {
+   "id": "q194",
+   "query": "cash offer ready Lancaster",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 189
+  },
+  {
+   "id": "q195",
+   "query": "fha ok 3 bed Fresno",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 190
+  },
+  {
+   "id": "q196",
+   "query": "VA loan homes Oceanside under 700k",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 191
+  },
+  {
+   "id": "q197",
+   "query": "turnkey Pasadena 1.5m",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 192
+  },
+  {
+   "id": "q198",
+   "query": "open house Sunday Santa Monica",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 193
+  },
+  {
+   "id": "q199",
+   "query": "seller financing Bakersfield",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 194
+  },
+  {
+   "id": "q200",
+   "query": "assumable loan 3.5% Temecula",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 195
+  },
+  {
+   "id": "q201",
+   "query": "tour tomorrow 2 bed condo Long Beach",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 196
+  },
+  {
+   "id": "q202",
+   "query": "homes available this weekend with open houses",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 182
+  },
+  {
+   "id": "q203",
+   "query": "move-in ready homes in San Diego under 1.2m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 197
+  },
+  {
+   "id": "q204",
+   "query": "new listings in Irvine under 900k with seller financing",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 198
+  },
+  {
+   "id": "q205",
+   "query": "I want to tour 3 bedroom houses in Corona this Saturday",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 199
+  },
+  {
+   "id": "q206",
+   "query": "schedule a showing for the 4 bed in Temecula",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 200
+  },
+  {
+   "id": "q207",
+   "query": "I'm pre-approved for 800k and looking for a 3 bed in Sacramento",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 201
+  },
+  {
+   "id": "q208",
+   "query": "ready to make an offer on a condo in Santa Monica under 1m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 202
+  },
+  {
+   "id": "q209",
+   "query": "contact an agent about a 2 bedroom condo in San Diego with parking under 600k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 203
+  },
+  {
+   "id": "q210",
+   "query": "homes in Carlsbad with 4 bedrooms, a pool, and a 3 car garage under 2.2m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 204
+  },
+  {
+   "id": "q211",
+   "query": "3 bed 2 bath in Escondido under 650k, available now",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 205
+  },
+  {
+   "id": "q212",
+   "query": "open houses in Walnut Creek this Sunday with 4 bedrooms",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 206
+  },
+  {
+   "id": "q213",
+   "query": "homes in Pleasanton under 1.8m with 4 beds, in good condition, ready to close fast",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 207
+  },
+  {
+   "id": "q214",
+   "query": "condos in Irvine with 2 bedrooms under 700k that I can see this week",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 208
+  },
+  {
+   "id": "q215",
+   "query": "which houses in Fresno under 400k can I tour today",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 209
+  },
+  {
+   "id": "q216",
+   "query": "are there any open houses in Santa Clarita this weekend",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 210
+  },
+  {
+   "id": "q217",
+   "query": "can I see the 3 bedroom in Yorba Linda tomorrow",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 211
+  },
+  {
+   "id": "q218",
+   "query": "homes in Chula Vista with seller financing and no HOA under 800k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 212
+  },
+  {
+   "id": "q219",
+   "query": "foreclosed homes in Riverside under 350k, cash buyer",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 213
+  },
+  {
+   "id": "q220",
+   "query": "investor deal in Stockton under 300k, cash offer, close in 14 days",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 214
+  },
+  {
+   "id": "q221",
+   "query": "new construction 4 bed in Fontana under 750k, move in this month",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 215
+  },
+  {
+   "id": "q222",
+   "query": "single story 3 bedroom with a pool in Hemet under 450k ready to move in",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 216
+  },
+  {
+   "id": "q223",
+   "query": "2 bedroom condo in Long Beach under 500k with parking and in unit laundry, available immediately",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 217
+  },
+  {
+   "id": "q224",
+   "query": "duplex in Oakland under 1.1m with tenants in place, ready to offer",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 218
+  },
+  {
+   "id": "q225",
+   "query": "homes in Napa under 1.3m with a guest house, can close in 30 days",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 219
+  },
+  {
+   "id": "q226",
+   "query": "4 bed 3 bath in San Clemente under 2m, open house Saturday",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 220
+  },
+  {
+   "id": "q227",
+   "query": "homes for sale in Burbank under 1.2m with 3 bedrooms, tour this weekend",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 221
+  },
+  {
+   "id": "q228",
+   "query": "3 bedroom houses in Ontario under 600k with FHA financing, ready to buy",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 222
+  },
+  {
+   "id": "q229",
+   "query": "VA approved 4 bedroom in Vista under 850k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 223
+  },
+  {
+   "id": "q230",
+   "query": "bring all offers, price reduced 3 bed in Santa Rosa",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 224
+  },
+  {
+   "id": "q231",
+   "query": "contact me when a 3 bed under 700k hits the market in Riverside",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 225
+  },
+  {
+   "id": "q232",
+   "query": "do you have any open houses today in La Jolla",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 226
+  },
+  {
+   "id": "q233",
+   "query": "is the 4 bedroom on Oak Street in Pleasanton still available",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 227
+  },
+  {
+   "id": "q234",
+   "query": "first time buyer looking for a 2 bed condo in San Diego under 500k, want to tour soon",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 228
+  },
+  {
+   "id": "q235",
+   "query": "new listings in Tustin with 3 bedrooms and a garage under 1.4m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 229
+  },
+  {
+   "id": "q236",
+   "query": "just listed 4 bedroom homes in Rancho Cucamonga with a pool under 1.1m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 230
+  },
+  {
+   "id": "q237",
+   "query": "I have cash and want to close quickly on a 3 bed in Palm Springs under 900k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 231
+  },
+  {
+   "id": "q238",
+   "query": "please arrange a viewing of 2 bedroom condos in Pasadena under 650k this week",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 232
+  },
+  {
+   "id": "q239",
+   "query": "ready to buy a 4 bedroom in Elk Grove under 750k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 222
+  },
+  {
+   "id": "q240",
+   "query": "homes in Sunnyvale under 2m with 3 beds and 2 baths, offer deadline this week",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 233
+  },
+  {
+   "id": "q241",
+   "query": "move in ready condos in Glendale under 600k with parking, available now",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 234
+  },
+  {
+   "id": "q242",
+   "query": "3 bed 2 bath homes in Stockton under 400k with assumable loan",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 235
+  },
+  {
+   "id": "q243",
+   "query": "houses in Fresno with a pool under 450k, can see them Saturday",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 236
+  },
+  {
+   "id": "q244",
+   "query": "newly listed 5 bedroom in Calabasas under 3m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 237
+  },
+  {
+   "id": "q245",
+   "query": "3 bed in Vista with seller financing, ready to sign",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 238
+  },
+  {
+   "id": "q246",
+   "query": "homes in Santa Clara under 1.6m with 4 bedrooms, schedule a tour",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 239
+  },
+  {
+   "id": "q247",
+   "query": "2 bedroom townhouse in Anaheim under 700k, open house tomorrow",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 240
+  },
+  {
+   "id": "q248",
+   "query": "My wife and I are pre-approved up to 950k and want to see 3 or 4 bedroom homes in Cupertino with good schools, we can tour this weekend",
+   "intent": "high_intent_inquiry",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 241
+  },
+  {
+   "id": "q249",
+   "query": "looking for a move-in ready 4 bedroom in Temecula with a pool, under 900k, and we need to close within 45 days",
+   "intent": "high_intent_inquiry",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 242
+  },
+  {
+   "id": "q250",
+   "query": "please set up a showing for the new listing in Pleasanton, 4 beds, 3 baths, listed under 1.6 million",
+   "intent": "high_intent_inquiry",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 243
+  },
+  {
+   "id": "q251",
+   "query": "we are relocating next month and need a 3 bedroom house in San Diego under 1.1m that is available right away",
+   "intent": "high_intent_inquiry",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 244
+  },
+  {
+   "id": "q252",
+   "query": "I'm a cash buyer and would like to see any 2 or 3 bedroom foreclosures in Bakersfield under 300k as soon as they are listed",
+   "intent": "high_intent_inquiry",
+   "style": "long",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 245
+  },
+  {
+   "id": "q253",
+   "query": "3bd 2ba irvine <700k open hse sat",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 246
+  },
+  {
+   "id": "q254",
+   "query": "open houses tmrw riverside",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 247
+  },
+  {
+   "id": "q255",
+   "query": "frist time buyer 3 bed under 500k sacremento tour",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 248
+  },
+  {
+   "id": "q256",
+   "query": "mov in redy 2br san diego 600k",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 249
+  },
+  {
+   "id": "q257",
+   "query": "homes av now temecula",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 250
+  },
+  {
+   "id": "q258",
+   "query": "3br/2ba pool corona 650k asap",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 251
+  },
+  {
+   "id": "q259",
+   "query": "fha 4bd moreno valley 550k move in now",
+   "intent": "high_intent_inquiry",
+   "style": "noisy",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 252
+  },
+  {
+   "id": "q260",
+   "query": "what 3 bedroom houses in Fresno under 400k are available now",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "dev",
+   "group": 253
+  },
+  {
+   "id": "q261",
+   "query": "what's the HOA on the new listing in Irvine that has an open house this weekend",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 254
+  },
+  {
+   "id": "q262",
+   "query": "new listings in Oakland",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "test",
+   "group": 255
+  },
+  {
+   "id": "q263",
+   "query": "homes under 700k in Riverside with a pool",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "dev",
+   "group": 187
+  },
+  {
+   "id": "q264",
+   "query": "are there any 4 bedroom homes under 1m in Pasadena I can see soon",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 256
+  },
+  {
+   "id": "q265",
+   "query": "homes with seller financing in Redding",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "test",
+   "group": 194
+  },
+  {
+   "id": "q266",
+   "query": "price reduced homes in Santa Barbara",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": true,
+   "source": "week7",
+   "split": "train",
+   "group": 257
+  },
+  {
+   "id": "q267",
+   "query": "4 bedroom homes in Mission Viejo under 1.5m with a pool, I can tour Thursday",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 258
+  },
+  {
+   "id": "q268",
+   "query": "condos in San Jose under 800k with 2 beds, available for immediate move in",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 259
+  },
+  {
+   "id": "q269",
+   "query": "3 bed 2 bath in Chino Hills under 900k, open house this Saturday and Sunday",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 220
+  },
+  {
+   "id": "q270",
+   "query": "homes in Sacramento under 450k with 3 beds and a garage, ready to offer",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 260
+  },
+  {
+   "id": "q271",
+   "query": "buying now: 3 bedroom ranch in Santa Rosa under 750k, cash",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "test",
+   "group": 261
+  },
+  {
+   "id": "q272",
+   "query": "new listings today in Huntington Beach with 3 beds under 1.3m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 262
+  },
+  {
+   "id": "q273",
+   "query": "2br condo Oakland 550k tour this week",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 263
+  },
+  {
+   "id": "q274",
+   "query": "4bd Roseville pool 700k available now",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7",
+   "split": "dev",
+   "group": 264
+  },
+  {
+   "id": "q275",
+   "query": "houses in Redlands with 4 bedrooms under 800k, pre-approved and ready",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 265
+  },
+  {
+   "id": "q276",
+   "query": "assumable VA loan 3 bedroom in Oceanside, want to see it this weekend",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7",
+   "split": "train",
+   "group": 266
+  },
+  {
+   "id": "q277",
+   "query": "show me homes in Corona",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 58
+  },
+  {
+   "id": "q278",
+   "query": "houses for sale in Temecula",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 267
+  },
+  {
+   "id": "q279",
+   "query": "homes with pools in Murrieta",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 268
+  },
+  {
+   "id": "q280",
+   "query": "condos in Long Beach",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 269
+  },
+  {
+   "id": "q281",
+   "query": "luxury homes in Pasadena",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 270
+  },
+  {
+   "id": "q282",
+   "query": "townhouses in Irvine",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 271
+  },
+  {
+   "id": "q283",
+   "query": "what's available in Big Bear City",
+   "intent": "browsing",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 272
+  },
+  {
+   "id": "q284",
+   "query": "homes near the beach in Oceanside",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 81
+  },
+  {
+   "id": "q285",
+   "query": "mountain view homes in Apple Valley",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 273
+  },
+  {
+   "id": "q286",
+   "query": "new construction in Moreno Valley",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 274
+  },
+  {
+   "id": "q287",
+   "query": "single story homes in Hemet",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 5
+  },
+  {
+   "id": "q288",
+   "query": "golf course homes in Palm Desert",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 16
+  },
+  {
+   "id": "q289",
+   "query": "cabins for sale in Big Bear",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 275
+  },
+  {
+   "id": "q290",
+   "query": "4 bedroom houses in Riverside",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 276
+  },
+  {
+   "id": "q291",
+   "query": "homes with a view in San Diego",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 277
+  },
+  {
+   "id": "q292",
+   "query": "fixer upper houses Los Angeles",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 278
+  },
+  {
+   "id": "q293",
+   "query": "homes in gated communities in Indio",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 279
+  },
+  {
+   "id": "q294",
+   "query": "modern homes in Oakland",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 280
+  },
+  {
+   "id": "q295",
+   "query": "55+ communities in Menifee",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 281
+  },
+  {
+   "id": "q296",
+   "query": "show me listings in Simi Valley",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 282
+  },
+  {
+   "id": "q297",
+   "query": "condos near UC Irvine with low HOA fees",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 123
+  },
+  {
+   "id": "q298",
+   "query": "which San Diego neighborhoods have top-rated schools",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 283
+  },
+  {
+   "id": "q299",
+   "query": "average HOA dues in Palm Desert gated communities",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 284
+  },
+  {
+   "id": "q300",
+   "query": "cities near Temecula with no Mello-Roos",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 285
+  },
+  {
+   "id": "q301",
+   "query": "is solar usually owned or leased on Murrieta homes",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 118
+  },
+  {
+   "id": "q302",
+   "query": "areas in Riverside with low property taxes",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 124
+  },
+  {
+   "id": "q303",
+   "query": "best Walnut Creek neighborhoods for families",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 286
+  },
+  {
+   "id": "q304",
+   "query": "how much do homes with a pool cost in Indio",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 287
+  },
+  {
+   "id": "q305",
+   "query": "does an ADU add value to a house in Los Angeles",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 288
+  },
+  {
+   "id": "q306",
+   "query": "compare Corona and Riverside for commuters",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 289
+  },
+  {
+   "id": "q307",
+   "query": "San Jose neighborhoods with walkable shopping and dining",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 290
+  },
+  {
+   "id": "q308",
+   "query": "are vacation rentals allowed in Big Bear City cabins",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 291
+  },
+  {
+   "id": "q309",
+   "query": "quiet streets near the beach in Oceanside",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 292
+  },
+  {
+   "id": "q310",
+   "query": "pros and cons of manufactured homes in Hemet",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 293
+  },
+  {
+   "id": "q311",
+   "query": "typical HOA fees for condos in Long Beach",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 294
+  },
+  {
+   "id": "q312",
+   "query": "Pasadena areas with a strong school district and walkable streets",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 295
+  },
+  {
+   "id": "q313",
+   "query": "55+ communities in Menifee with resort style amenities and low HOA",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 296
+  },
+  {
+   "id": "q314",
+   "query": "is a townhome or a condo cheaper in Irvine",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 297
+  },
+  {
+   "id": "q315",
+   "query": "which Simi Valley communities allow short term rentals",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 298
+  },
+  {
+   "id": "q316",
+   "query": "how long do homes take to sell in Lancaster",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 299
+  },
+  {
+   "id": "q317",
+   "query": "move-in ready 4 bed 3 bath in Temecula under 1.1m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 300
+  },
+  {
+   "id": "q318",
+   "query": "open houses this weekend in Irvine",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 182
+  },
+  {
+   "id": "q319",
+   "query": "3br 2ba w/ pool in Hemet under 550k ready now",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 301
+  },
+  {
+   "id": "q320",
+   "query": "single story homes in Corona with 3 car garage under $900k available now",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 302
+  },
+  {
+   "id": "q321",
+   "query": "turnkey townhouse in Long Beach under 750k with attached garage",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 303
+  },
+  {
+   "id": "q322",
+   "query": "new listings in San Diego with ADU and solar under 1.5m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 304
+  },
+  {
+   "id": "q323",
+   "query": "homes in Murrieta w/ no HOA and RV parking ready to tour",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 305
+  },
+  {
+   "id": "q324",
+   "query": "schedule a showing for a remodeled 4 bedroom in Riverside",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 306
+  },
+  {
+   "id": "q325",
+   "query": "gated community homes in Palm Desert with pool under 800k open house sunday",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 307
+  },
+  {
+   "id": "q326",
+   "query": "2,000 sqft or larger in Oceanside under $1.2M move in ready",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "test",
+   "group": 308
+  },
+  {
+   "id": "q327",
+   "query": "homes in Apple Valley with seller financing available",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "dev",
+   "group": 309
+  },
+  {
+   "id": "q328",
+   "query": "just listed condos in Pasadena under 650k with parking",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 310
+  },
+  {
+   "id": "q329",
+   "query": "5 bed 4 bath cul-de-sac home in Walnut Creek, can close in 30 days",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 311
+  },
+  {
+   "id": "q330",
+   "query": "investor special in Lancaster under 400k, cash offer ready",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 312
+  },
+  {
+   "id": "q331",
+   "query": "homes w/ vacation rental license in Big Bear City under 700k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 313
+  },
+  {
+   "id": "q332",
+   "query": "price reduced homes in Menifee with 3 car garage",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 314
+  },
+  {
+   "id": "q333",
+   "query": "contact agent about 3bd/2ba in Moreno Valley w/ owned solar",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 315
+  },
+  {
+   "id": "q334",
+   "query": "fixer-upper w/ ADU potential in Victorville under 450k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 316
+  },
+  {
+   "id": "q335",
+   "query": "Escondido homes with mountain views, vaulted ceilings, and a home office ready to tour this week",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 317
+  },
+  {
+   "id": "q336",
+   "query": "4br in Indio w/ pool & spa, no HOA, under $700k, available immediately",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week1",
+   "split": "train",
+   "group": 318
+  },
+  {
+   "id": "q337",
+   "query": "open house Saturday Carlsbad",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 319
+  },
+  {
+   "id": "q338",
+   "query": "showing today Torrance 3 bed",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 320
+  },
+  {
+   "id": "q339",
+   "query": "offer by Friday 2 bd condo Santa Clara 800k",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 321
+  },
+  {
+   "id": "q340",
+   "query": "3 bed 2 bath Fresno 380k move in ready",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 322
+  },
+  {
+   "id": "q341",
+   "query": "homes Roseville pool 650k tour Sunday",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 323
+  },
+  {
+   "id": "q342",
+   "query": "4br Bakersfield 450k cash ready to close",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 324
+  },
+  {
+   "id": "q343",
+   "query": "new listing alert Mission Viejo 3 bedroom under 1.2m",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 325
+  },
+  {
+   "id": "q344",
+   "query": "hot new listings in Burbank under 1m with 2 bedrooms",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 326
+  },
+  {
+   "id": "q345",
+   "query": "list homes in Visalia under 400k with 3 bedrooms available this month",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 327
+  },
+  {
+   "id": "q346",
+   "query": "can I schedule a tour of the townhouse in Dublin under 900k with 3 beds",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 328
+  },
+  {
+   "id": "q347",
+   "query": "seller financing available 3 bedroom Palmdale under 450k",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 329
+  },
+  {
+   "id": "q348",
+   "query": "just reduced 4 bed in Escondido under 900k, ready to buy",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 330
+  },
+  {
+   "id": "q349",
+   "query": "looking to buy this month: 3 bedroom in Gilroy under 950k with a garage",
+   "intent": "high_intent_inquiry",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 331
+  },
+  {
+   "id": "q350",
+   "query": "open house today Santa Cruz",
+   "intent": "high_intent_inquiry",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 332
+  },
+  {
+   "id": "q351",
+   "query": "HOA fees San Diego condos",
+   "intent": "researching",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 333
+  },
+  {
+   "id": "q352",
+   "query": "property tax Riverside County",
+   "intent": "researching",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 334
+  },
+  {
+   "id": "q353",
+   "query": "Mello-Roos Temecula",
+   "intent": "researching",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 335
+  },
+  {
+   "id": "q354",
+   "query": "flood zone map Sacramento",
+   "intent": "researching",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 336
+  },
+  {
+   "id": "q355",
+   "query": "commute times Irvine to LA",
+   "intent": "researching",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 337
+  },
+  {
+   "id": "q356",
+   "query": "average rent vs mortgage in Long Beach",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 338
+  },
+  {
+   "id": "q357",
+   "query": "how much are closing costs in California",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 339
+  },
+  {
+   "id": "q358",
+   "query": "what is a good HOA fee for a townhouse",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 340
+  },
+  {
+   "id": "q359",
+   "query": "which Orange County cities have the lowest property tax",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 341
+  },
+  {
+   "id": "q360",
+   "query": "cost per square foot to build in Sonoma",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 342
+  },
+  {
+   "id": "q361",
+   "query": "are Davis schools worth the higher home prices",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 343
+  },
+  {
+   "id": "q362",
+   "query": "best time of year to buy a house in San Diego",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 344
+  },
+  {
+   "id": "q363",
+   "query": "how much down payment do I need for a home in Santa Monica",
+   "intent": "researching",
+   "style": "question",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 345
+  },
+  {
+   "id": "q364",
+   "query": "earthquake risk in the Bay Area",
+   "intent": "researching",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 346
+  },
+  {
+   "id": "q365",
+   "query": "houses Roseville",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 347
+  },
+  {
+   "id": "q366",
+   "query": "show me ranch style homes in Visalia",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 348
+  },
+  {
+   "id": "q367",
+   "query": "homes with a pool in Gilroy",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 349
+  },
+  {
+   "id": "q368",
+   "query": "condos near the beach in Del Mar",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 350
+  },
+  {
+   "id": "q369",
+   "query": "Mediterranean homes in Newport Beach",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 351
+  },
+  {
+   "id": "q370",
+   "query": "show me what you have in Folsom",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 352
+  },
+  {
+   "id": "q371",
+   "query": "town homes Dublin",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 353
+  },
+  {
+   "id": "q372",
+   "query": "hillside homes in Silver Lake",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 354
+  },
+  {
+   "id": "q373",
+   "query": "homes with a view of the ocean in San Pedro",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 355
+  },
+  {
+   "id": "q374",
+   "query": "guest house properties in Escondido",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 356
+  },
+  {
+   "id": "q375",
+   "query": "houses in Encinitas with a yard",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 357
+  },
+  {
+   "id": "q376",
+   "query": "listings in Torrance",
+   "intent": "browsing",
+   "style": "keyword",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 358
+  },
+  {
+   "id": "q377",
+   "query": "two story homes in Mission Viejo",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 359
+  },
+  {
+   "id": "q378",
+   "query": "farm properties near Visalia",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 360
+  },
+  {
+   "id": "q379",
+   "query": "modern farmhouse homes in Santa Rosa",
+   "intent": "browsing",
+   "style": "natural",
+   "hard": false,
+   "source": "week7_added",
+   "split": "train",
+   "group": 361
+  }
+ ]
+}

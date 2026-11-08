@@ -3,6 +3,7 @@
     python scripts/run_query.py "3 bed under 700k in Irvine"          # parse + validate + show SQL
     python scripts/run_query.py "3 bed under 700k in Irvine" --sample # also run it on the 1,000-row sample (no Docker needed)
     python scripts/run_query.py "3 bed under 700k in Irvine" --mysql  # also run it on your MySQL container
+    python scripts/run_query.py "3 bed under 700k in Irvine" --intent # Week 7: also show the intent of the wording
 
 --sample loads data/processed/listing_sample.csv into an in-memory SQLite table with the same column
 names as rets_property, so the generated SQL can be tried without a database. It prints listing ids,
@@ -98,6 +99,7 @@ def main(argv=None):
     ap.add_argument("--sample", action="store_true", help="run on the sample CSV via in-memory SQLite")
     ap.add_argument("--mysql", action="store_true", help="run on the MySQL container")
     ap.add_argument("--limit", type=int, default=50)
+    ap.add_argument("--intent", action="store_true", help="Week 7: also print the query's intent (browsing / researching / high_intent_inquiry)")
     ap.add_argument("--schema", type=Path, default=None)
     ap.add_argument("--host", default=os.environ.get("DB_HOST", "localhost"))
     ap.add_argument("--user", default=os.environ.get("DB_USER", "root"))
@@ -112,6 +114,12 @@ def main(argv=None):
     print(f"query    : {res['query']}")
     print(f"cleaned  : {res['cleaned']}")
     print(f"filters  : {res['filters']}")
+    if args.intent:
+        from query_intent import QueryIntentClassifier, SUGGESTED_HANDLING
+        d = QueryIntentClassifier.load_or_train().predict_detailed(args.query)
+        flag = "  (UNCERTAIN)" if d["uncertain"] else ""
+        print(f"intent   : {d['intent']}  confidence {d['confidence']:.2f}{flag}")
+        print(f"handling : {SUGGESTED_HANDLING['uncertain' if d['uncertain'] else d['intent']]['note']}")
     for note in res["ignored"]:
         print(f"note     : {note}")
     if not res["valid"]:

@@ -7,3 +7,4 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 .pytest_cache/
+data/processed/listing_signals*
